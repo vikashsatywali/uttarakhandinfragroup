@@ -1196,6 +1196,7 @@ img { max-width: 100%; height: auto; display: block; }
   .process-timeline { grid-template-columns: repeat(2, 1fr); }
   .process-timeline::before { display: none; }
   .form-row { grid-template-columns: 1fr; }
+  .nav-cta-wrapper .btn-primary { display: none !important; }
 }
 
 @media (max-width: 768px) {
