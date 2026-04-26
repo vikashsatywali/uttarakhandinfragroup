@@ -1,0 +1,1186 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision & Mission | Uttarakhand Infra Groups</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&family=Outfit:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+
+    <style>
+        /* Global Overrides for Vision Page */
+        .title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Ultra-Premium Hero Section */
+        .page-header {
+            position: relative;
+            padding: 160px 0 80px;
+            background-color: var(--c-navy);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+            text-align: center;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/matched/bg_9efdfb54.jpg');
+            /* Spectacular corporate architecture skyline */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: 1;
+            animation: zoom-pulse 25s ease-in-out infinite alternate;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, var(--c-navy) 0%, transparent 60%);
+            z-index: 1;
+        }
+
+        @keyframes zoom-pulse {
+            0% {
+                transform: scale(1);
+                filter: grayscale(50%);
+            }
+
+            100% {
+                transform: scale(1.1);
+                filter: grayscale(0%);
+            }
+        }
+
+        .header-content-wrapper {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            font-size: 4rem;
+            color: var(--c-white);
+            margin-bottom: 20px;
+            line-height: 1.1;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .header-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid var(--c-gold);
+            color: var(--c-gold);
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            letter-spacing: 3px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Introduction Statement */
+        .intro-vision {
+            padding: 120px 0;
+            background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            position: relative;
+            text-align: center;
+        }
+
+        .vision-text-block {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .intro-quote-mark {
+            font-size: 8rem;
+            color: rgba(212, 175, 55, 0.15);
+            font-family: 'Playfair Display', serif;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            line-height: 1;
+            z-index: -1;
+        }
+
+        .vision-text-block p {
+            font-size: 1.35rem;
+            color: #334155;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+        }
+
+        /* Sector Visions - Stunning Dark Glassmorphism Slider Look */
+        .sector-vision {
+            padding: 120px 0;
+            background: url('assets/images/img_28.jpg') no-repeat center fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        .sector-vision::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(10, 25, 47, 0.85);
+            /* Deep dark overlay */
+            backdrop-filter: blur(8px);
+        }
+
+        .sector-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .sector-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 50px 30px;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(25px);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+
+        .sector-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.1), transparent);
+            transform: skewX(-25deg);
+            transition: all 0.7s;
+        }
+
+        .sector-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            border-color: var(--c-gold);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(212, 175, 55, 0.05);
+        }
+
+        .sector-card:hover::before {
+            left: 200%;
+        }
+
+        .sector-card i {
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, var(--c-gold), #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+
+        .sector-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7rem;
+            color: var(--c-white);
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .sector-card p {
+            color: #94A3B8;
+            font-size: 1rem;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* The Mission Blueprints (Architectural Wireframe Grid) */
+        .mission-section {
+            padding: 120px 0;
+            background-color: var(--c-white);
+            position: relative;
+        }
+
+        /* Custom architectural grid background */
+        .mission-section::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(10, 25, 47, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(10, 25, 47, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+            z-index: 1;
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            position: relative;
+            z-index: 2;
+            margin-top: 60px;
+        }
+
+        .mission-box {
+            background: var(--c-white);
+            border: 1px solid #E2E8F0;
+            border-radius: 0;
+            /* Sharp, structural corners */
+            padding: 50px;
+            position: relative;
+            transition: all 0.4s ease;
+            box-shadow: 10px 10px 0 rgba(10, 25, 47, 0.05);
+            /* Architectural offset shadow */
+        }
+
+        .mission-box:hover {
+            border-color: var(--c-navy);
+            box-shadow: 15px 15px 0 var(--c-gold);
+            transform: translate(-5px, -5px);
+        }
+
+        .mission-box h3 {
+            color: var(--c-navy);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 2px solid #E2E8F0;
+            padding-bottom: 15px;
+        }
+
+        .mission-box h3 i {
+            color: var(--c-gold);
+        }
+
+        .mission-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mission-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 18px;
+            color: #475569;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        /* Custom Animated checkmark */
+        .mission-list li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: var(--c-gold);
+            position: absolute;
+            left: 0;
+            top: 2px;
+            transition: transform 0.3s ease;
+        }
+
+        .mission-box:hover .mission-list li::before {
+            transform: scale(1.2);
+            color: var(--c-navy);
+        }
+
+        @media(max-width: 992px) {
+            .mission-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Core Values - Striking Typography Grid */
+        .values-section {
+            padding: 120px 0;
+            background: var(--c-navy);
+            color: var(--c-white);
+            overflow: hidden;
+        }
+
+        .values-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 60px;
+        }
+
+        .value-row {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 12px;
+            position: relative;
+            transition: all 0.4s ease;
+            overflow: hidden;
+        }
+
+        .value-row:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--c-gold);
+            transform: translateX(10px);
+        }
+
+        .value-number {
+            font-family: 'Outfit', sans-serif;
+            font-size: 6rem;
+            font-weight: 900;
+            color: transparent;
+            -webkit-text-stroke: 2px rgba(255, 255, 255, 0.1);
+            position: absolute;
+            left: -20px;
+            opacity: 0.7;
+            transition: all 0.4s ease;
+            pointer-events: none;
+        }
+
+        .value-row:hover .value-number {
+            -webkit-text-stroke: 2px rgba(212, 175, 55, 0.3);
+            transform: scale(1.1);
+        }
+
+        .value-content {
+            position: relative;
+            z-index: 2;
+            padding-left: 120px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .value-content h4 {
+            font-size: 2rem;
+            color: var(--c-gold);
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 10px;
+        }
+
+        .value-content p {
+            color: #CBD5E1;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0;
+            max-width: 800px;
+        }
+
+        @media(max-width: 768px) {
+            .value-row {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 30px;
+            }
+
+            .value-number {
+                font-size: 4rem;
+                position: relative;
+                left: 0;
+                margin-bottom: -20px;
+            }
+
+            .value-content {
+                padding-left: 0;
+                margin-top: 20px;
+            }
+        }
+
+        /* Strategy & Safety Split - Organic Shape Styling */
+        .strategy-section {
+            padding: 120px 0;
+            background: var(--c-bg-light);
+        }
+
+        .strategy-flex {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .strategy-content {
+            flex: 1;
+        }
+
+        .strategy-img {
+            flex: 1;
+            position: relative;
+        }
+
+        /* Abstract Organic Clipping */
+        .strategy-img img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            /* Organic liquid shape */
+            animation: morph 8s ease-in-out infinite both alternate;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        @keyframes morph {
+            0% {
+                border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            }
+
+            100% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+        }
+
+        .strategy-stat-box {
+            position: absolute;
+            bottom: 40px;
+            left: -40px;
+            background: var(--c-white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--c-gold);
+            /* Glassy blur over abstract layer */
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .strategy-stat-box h3 {
+            font-size: 2.5rem;
+            color: var(--c-navy);
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-family: 'Outfit';
+        }
+
+        .strategy-stat-box p {
+            margin: 0;
+            color: #64748B;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        @media(max-width: 992px) {
+            .strategy-flex {
+                flex-direction: column;
+            }
+
+            .strategy-stat-box {
+                left: 20px;
+            }
+        }
+
+        /* Massive Network Area - Pulsing Nodes */
+        .network-section {
+            padding: 150px 0;
+            background: var(--c-navy);
+            position: relative;
+            color: var(--c-white);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Animated grid background */
+        .network-section::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background-image: radial-gradient(rgba(212, 175, 55, 0.1) 2px, transparent 2px);
+            background-size: 40px 40px;
+            transform: perspective(500px) rotateX(60deg) translateY(-100px);
+            animation: moveGrid 20s linear infinite;
+        }
+
+        @keyframes moveGrid {
+            0% {
+                transform: perspective(500px) rotateX(60deg) translateY(0);
+            }
+
+            100% {
+                transform: perspective(500px) rotateX(60deg) translateY(40px);
+            }
+        }
+
+        .network-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .location-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .location-tags span {
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--c-white);
+            padding: 15px 30px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1.1rem;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            cursor: default;
+            position: relative;
+        }
+
+        .location-tags span::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: linear-gradient(45deg, var(--c-gold), transparent, transparent, var(--c-gold));
+            z-index: -1;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .location-tags span:hover::before {
+            opacity: 1;
+        }
+
+        .location-tags span:hover {
+            transform: translateY(-5px);
+            color: var(--c-gold);
+            background: var(--c-navy);
+        }
+
+        /* Call to Action Banner */
+        .cta-banner {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--c-navy) 0%, #1e293b 100%);
+            text-align: center;
+            color: var(--c-white);
+            border-top: 5px solid var(--c-gold);
+            position: relative;
+        }
+
+        .cta-banner::after {
+            content: '\f2b5';
+            /* Solid Handshake */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            font-size: 15rem;
+            color: rgba(212, 175, 55, 0.05);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .cta-banner .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-banner h2 {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+            font-family: 'Playfair Display';
+            color: var(--c-white);
+        }
+
+        .cta-banner p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #CBD5E1;
+        }
+
+        .cta-banner .btn-gold {
+            background: var(--c-gold);
+            color: var(--c-navy);
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .cta-banner .btn-gold:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span class="branding-line"><i class="fa-solid fa-truck-fast"></i> Complete Infrastructure & Logistics
+                    Solutions</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <span class="support-text"><i class="fa-solid fa-clock"></i> 24/7 Support: +91 98765 43210</span>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Corporate Navbar -->
+    <nav class="navbar premium-navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-mountain-sun"></i></span>
+                <div class="logo-text">
+                    <span class="brand-name">Uttarakhand</span>
+                    <span class="brand-sub">Infra Groups</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html" class="active">Company <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="vision.html" class="active">Our Vision & Mission</a></li>
+                        <li><a href="about.html#timeline">Why Choose Us</a></li>
+                    </ul>
+                </li>
+                <li class="mega-menu-item">
+                    <a href="index.html#services">Services <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-city text-gold"></i> Construction & Builders</h3>
+                                <ul>
+                                    <li><a href="house-construction.html"><i class="fa-solid fa-angle-right"></i> House Construction</a></li>
+                                    <li><a href="villa.html"><i class="fa-solid fa-angle-right"></i> Villa Construction</a></li>
+                                    <li><a href="hotel-construction.html"><i class="fa-solid fa-angle-right"></i> Hotel / Resort</a></li>
+                                    <li><a href="shop-com.html"><i class="fa-solid fa-angle-right"></i> Shop & Commercial</a></li>
+                                    <li><a href="trunkey.html"><i class="fa-solid fa-angle-right"></i> Turnkey Projects</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-truck-fast text-gold"></i> Transport & Logistics</h3>
+                                <ul>
+                                    <li><a href="construction-material.html"><i class="fa-solid fa-angle-right"></i> Construction Material</a></li>
+                                    <li><a href="heavy-equipment.html"><i class="fa-solid fa-angle-right"></i> Heavy Equipment</a></li>
+                                    <li><a href="all-uk-goods.html"><i class="fa-solid fa-angle-right"></i> All Uttarakhand Goods</a></li>
+                                    <li><a href="bulk-supply.html"><i class="fa-solid fa-angle-right"></i> Bulk Supply</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-boxes-packing text-gold"></i> Movers & Packers</h3>
+                                <ul>
+                                    <li><a href="home-relocation.html"><i class="fa-solid fa-angle-right"></i> Home Relocation</a></li>
+                                    <li><a href="office-shifting.html"><i class="fa-solid fa-angle-right"></i> Office Shifting</a></li>
+                                    <li><a href="vehicle-transportation.html"><i class="fa-solid fa-angle-right"></i> Vehicle Transportation</a></li>
+                                    <li><a href="warehouse.html"><i class="fa-solid fa-angle-right"></i> Warehouse / Storage</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-house-chimney text-gold"></i> Real Estate</h3>
+                                <ul>
+                                    <li><a href="buy-ready.html"><i class="fa-solid fa-angle-right"></i> Buy Ready House</a></li>
+                                    <li><a href="sell-property.html"><i class="fa-solid fa-angle-right"></i> Sell Property</a></li>
+                                    <li><a href="plot-construction.html"><i class="fa-solid fa-angle-right"></i> Plot Construction</a></li>
+                                    <li><a href="consulation.html"><i class="fa-solid fa-angle-right"></i> Consulting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li class="dropdown">
+                    <a href="index.html#areas">Service Areas <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rudrapur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Rudrapur</a></li>
+                        <li><a href="haldwani.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Haldwani</a></li>
+                        <li><a href="ramnagar.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ramnagar</a></li>
+                        <li><a href="almora.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Almora</a></li>
+                        <li><a href="ranikhet.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ranikhet</a></li>
+                        <li><a href="kashipur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Kashipur</a></li>
+                        <li style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 5px; padding-top: 5px;">
+                            <a href="index.html#quote" style="color: var(--c-gold) !important;"><i
+                                    class="fa-solid fa-map-location-dot" style="margin-right: 8px;"></i>Custom
+                                Location</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta-wrapper" style="display: flex; flex-direction: row; gap: 15px; align-items: center; flex-wrap: nowrap; white-space: nowrap;">
+                <a href="tel:+919456722521" class="btn-call" style="margin-right: 8px; padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); display: inline-flex; align-items: center;"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/919456722521" target="_blank" class="btn-whatsapp" style="padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); color: #25D366; display: inline-flex; align-items: center;"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="buy-ready.html" class="btn-primary" style="background: transparent; color: var(--c-gold); border: 2px solid var(--c-gold); padding: 8px 16px; font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-house-circle-check" style="margin-right: 8px;"></i> Buy Property</a>
+                <a href="sell-property.html" class="btn-primary" style="background: var(--c-gold); color: var(--c-navy); padding: 8px 16px; border: 2px solid var(--c-gold); font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-hand-holding-dollar" style="margin-right: 8px;"></i> Sell Property</a>
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Animated Zoom-Pulse Hero Section -->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-content-wrapper" data-aos="zoom-in" data-aos-duration="1500">
+                <span class="header-badge"><i class="fa-solid fa-bullseye"></i> The Roadmap for Success</span>
+                <h1 class="page-title">Our Vision & Mission</h1>
+                <p
+                    style="font-size: 1.6rem; color: #E2E8F0; font-weight: 300; line-height: 1.6; font-family: 'Playfair Display', serif;">
+                    Building Infrastructure. Powering Logistics. Delivering Excellence.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction Statement (Textured Background) -->
+    <section class="intro-vision">
+        <div class="container">
+            <div class="vision-text-block" data-aos="fade-up">
+                <div class="intro-quote-mark">"</div>
+                <h2 class="title" style="font-size: 3rem; margin-bottom: 30px; color: var(--c-navy);">Setting the <span
+                        class="text-gold">Standard</span></h2>
+                <p>We are absolutely committed to shaping the future of <strong>construction, transport, movers &
+                        packers, and real estate services spanning from Uttarakhand to All India.</strong> Our vision
+                    and mission explicitly define who we are, what we inherently stand for, and exactly where we are
+                    heading as an organization.</p>
+                <p>Our vision is to establish ourselves as the single leading infrastructure and logistics company in
+                    India. We aim to radically transform the way people experience large-scale structural development by
+                    offering <strong>complete, end-to-end solutions under one powerful banner.</strong></p>
+
+                <h4
+                    style="font-size: 1.5rem; color: var(--c-navy); margin-top: 50px; font-family: 'Playfair Display', serif;">
+                    The Long-Term Imperatives</h4>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px;">
+                    <span
+                        style="background: var(--c-navy); color: var(--c-white); padding: 10px 25px; border-radius: 5px; font-size: 0.95rem;">Most
+                        Trusted in Uttarakhand</span>
+                    <span
+                        style="background: var(--c-navy); color: var(--c-white); padding: 10px 25px; border-radius: 5px; font-size: 0.95rem;">Pan-India
+                        Transport Network</span>
+                    <span
+                        style="background: var(--c-navy); color: var(--c-white); padding: 10px 25px; border-radius: 5px; font-size: 0.95rem;">Top
+                        National Movers</span>
+                    <span
+                        style="background: var(--c-navy); color: var(--c-white); padding: 10px 25px; border-radius: 5px; font-size: 0.95rem;">Sustainable
+                        Real Estate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sector Visions (Dark Glass Hover Boxes) -->
+    <section class="sector-vision">
+        <div class="container">
+            <div class="section-header center light" data-aos="fade-up">
+                <h5 class="subtitle text-gold">The Horizon</h5>
+                <h2 class="title" style="font-size: 3.5rem;">Vision Across <span class="text-gold">Sectors</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="sector-grid">
+                <!-- Construction -->
+                <div class="sector-card" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fa-solid fa-city"></i>
+                    <h3>Construction Architecture</h3>
+                    <p>We envision creating strong, durable, and modern infrastructure that radically enhances lifestyle
+                        and business growth. From independent houses to luxury villas, hotels, and commercial towers, we
+                        aim to deliver projects that stand permanently as a symbol of quality and trust.</p>
+                </div>
+                <!-- Transport -->
+                <div class="sector-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Transport & Logistics</h3>
+                    <p>We aim to build a powerful logistical network that secures fast, safe, and robust transportation
+                        of mass materials across India. Our absolute vision is to become the fundamental preferred
+                        partner for industries and builders requiring perfect supply chain solutions.</p>
+                </div>
+                <!-- Relocation -->
+                <div class="sector-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-boxes-packing"></i>
+                    <h3>Movers & Packers</h3>
+                    <p>We envision becoming a universally trusted name in relocation services, providing stress-free and
+                        entirely secure shifting solutions for homes, corporate offices, and vehicles via strictly
+                        professional handling and white-glove care.</p>
+                </div>
+                <!-- Real Estate -->
+                <div class="sector-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-house-chimney-window"></i>
+                    <h3>Real Estate Mastery</h3>
+                    <p>Our goal is to create immense opportunities for people to buy, sell, and invest in properties
+                        with unshakeable confidence, while exclusively delivering ready-homes and custom-tailored civil
+                        construction arrays to fit their immediate and future needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Mission Blueprints (Architectural Grid) -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="section-header align-left" data-aos="fade-right">
+                <h5 class="subtitle text-gold">The Blueprint</h5>
+                <h2 class="title" style="font-size: 3.5rem; color: var(--c-navy);">Our Core <span
+                        class="text-gold">Mission</span></h2>
+                <div class="divider" style="margin: 20px 0;"></div>
+                <p style="font-size: 1.25rem; color: #475569; line-height: 1.8; max-width: 800px; margin-bottom: 20px;">
+                    Our mission is definitively simple yet highly critical: to deliver reliable, highly-engineered, and
+                    fundamentally cost-effective services across the heavy construction, transport, and relocation
+                    sectors while guaranteeing complete customer satisfaction via continuous value.
+                </p>
+                <div
+                    style="width: 100px; height: 5px; background: repeating-linear-gradient(45deg, var(--c-navy), var(--c-navy) 10px, transparent 10px, transparent 20px);">
+                </div>
+            </div>
+
+            <div class="mission-grid">
+                <!-- Mission 1 -->
+                <div class="mission-box" data-aos="zoom-in" data-aos-delay="0">
+                    <h3><i class="fa-solid fa-hard-hat"></i> Excellence in Construction</h3>
+                    <ul class="mission-list">
+                        <li>Delivering perfectly engineered residential and commercial construction projects.</li>
+                        <li>Providing house construction on client plots embedded with modern architectural durability.
+                        </li>
+                        <li>Offering complete Turnkey solutions from the first CAD drawing to the final handover.</li>
+                        <li>Building massive-scale resorts, shops, and complex infrastructure protocols.</li>
+                        <li>Strictly maintaining unyielding quality standards and punctual timeframe completions.</li>
+                    </ul>
+                </div>
+                <!-- Mission 2 -->
+                <div class="mission-box" data-aos="zoom-in" data-aos-delay="100">
+                    <h3><i class="fa-solid fa-truck-moving"></i> Reliable Transit Services</h3>
+                    <ul class="mission-list">
+                        <li>Providing heavy construction material transport (ret, bajri, bulk cement).</li>
+                        <li>Ensuring the flawless delivery of goods navigating across complicated Himalayan terrain.
+                        </li>
+                        <li>Effectively managing heavy transport, bulk supply chains, and equipment shifting.</li>
+                        <li>Maintaining an aggressive and highly efficient pan-India logistics framework.</li>
+                    </ul>
+                </div>
+                <!-- Mission 3 -->
+                <div class="mission-box" data-aos="zoom-in" data-aos-delay="200">
+                    <h3><i class="fa-solid fa-box-open"></i> Professional Relocations</h3>
+                    <ul class="mission-list">
+                        <li>Delivering guaranteed safe and 100% damage-free home relocation frameworks.</li>
+                        <li>Providing highly efficient, time-sensitive corporate office shifting routines.</li>
+                        <li>Offering secure, multi-state vehicle transportation services across India.</li>
+                        <li>Using impenetrable, high-quality industrial packing foams with trained staff.</li>
+                        <li>Guaranteeing a frictionless, stress-free shifting process.</li>
+                    </ul>
+                </div>
+                <!-- Mission 4 -->
+                <div class="mission-box" data-aos="zoom-in" data-aos-delay="300">
+                    <h3><i class="fa-solid fa-building-circle-check"></i> Real Estate Solutions</h3>
+                    <ul class="mission-list">
+                        <li>Facilitating extreme ease for clients to buy, sell, and acquire commercial property.</li>
+                        <li>Providing legally verified, ready-to-move-in homes alongside secure land plots.</li>
+                        <li>Offering flawless construction execution directly upon customer-owned territory.</li>
+                        <li>Delivering transparent, expert-level property consultation and legal support.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values (Striking Number Layout) -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header align-left light" data-aos="fade-right">
+                <h5 class="subtitle text-gold">The Pillars</h5>
+                <h2 class="title" style="font-size: 3.5rem;">Values That Define <span
+                        class="text-gold">Everything</span></h2>
+                <div class="divider" style="margin: 20px 0;"></div>
+            </div>
+
+            <div class="values-wrapper">
+                <!-- Value 1 -->
+                <div class="value-row" data-aos="fade-left" data-aos-delay="0">
+                    <div class="value-number">01</div>
+                    <div class="value-content">
+                        <h4>Quality Commitment</h4>
+                        <p>We violently reject mediocrity. We utilize only the absolute highest tier of commercial
+                            materials across structural construction, heavy transport, and fragile office removals.</p>
+                    </div>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="value-row" data-aos="fade-left" data-aos-delay="100">
+                    <div class="value-number">02</div>
+                    <div class="value-content">
+                        <h4>Customer First Approach</h4>
+                        <p>Our operational architecture is designed in reverse-starting from your specific needs and
+                            working backward to build a logistical path that guarantees total satisfaction.</p>
+                    </div>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="value-row" data-aos="fade-left" data-aos-delay="200">
+                    <div class="value-number">03</div>
+                    <div class="value-content">
+                        <h4>Transparency & Trust</h4>
+                        <p>We obliterate industry standards by maintaining rigid honesty in our pricing layers, ensuring
+                            zero hidden fees, and implementing pure, unfiltered communication protocols.</p>
+                    </div>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="value-row" data-aos="fade-left" data-aos-delay="300">
+                    <div class="value-number">04</div>
+                    <div class="value-content">
+                        <h4>Timely Execution</h4>
+                        <p>We thoroughly comprehend the irreplaceable value of time. We mobilize resources aggressively
+                            to push projects to absolute completion, strictly ahead of or on the projected schedule.</p>
+                    </div>
+                </div>
+
+                <!-- Value 5 -->
+                <div class="value-row" data-aos="fade-left" data-aos-delay="400">
+                    <div class="value-number">05</div>
+                    <div class="value-content">
+                        <h4>Professional Excellence</h4>
+                        <p>From the CAD engineers drawing your walls to the transit captains hauling your payload across
+                            state lines, our teams execute with ruthless proficiency and trained excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy & Quality Split (Organic Morph Shape) -->
+    <section class="strategy-section">
+        <div class="container">
+            <div class="strategy-flex">
+                <div class="strategy-content" data-aos="fade-right">
+                    <h5 class="subtitle text-gold">Evolution</h5>
+                    <h2 class="title" style="font-size: 3rem; margin-bottom: 25px; color: var(--c-navy);">Growth
+                        Strategy & <span class="text-gold">Safety Protocols</span></h2>
+                    <p style="color: #475569; font-size: 1.15rem; line-height: 1.7; margin-bottom: 25px;">
+                        Stagnation is failure. We are continuously augmenting and massively expanding our
+                        infrastructure. Our strategy centers on adopting ultra-modern technologies and strengthening our
+                        footprint.
+                    </p>
+
+                    <ul class="mission-list">
+                        <li><strong>National Expansion:</strong> Increasing our presence across all major cities
+                            systematically.</li>
+                        <li><strong>Fleet Superiority:</strong> Upgrading logistical chains and introducing modernized
+                            heavy transport nodes.</li>
+                        <li><strong>Tech Adoption:</strong> Utilizing advanced CAD blueprinting and structural mapping
+                            protocols.</li>
+                        <li><strong>Workforce Elite:</strong> Mandating rigorous safety procedures and intensive
+                            training for all staff arrays.</li>
+                    </ul>
+
+                    <h4
+                        style="margin-top: 40px; margin-bottom: 20px; font-size: 1.5rem; color: var(--c-navy); font-family: 'Playfair Display';">
+                        The Safety Commitment</h4>
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.7;">
+                        There is no compromise on human life or physical asset integrity. We strictly enforce compliance
+                        with state safety and architectural rigidity standards on every concrete pour and every highway
+                        transit operation.
+                    </p>
+                </div>
+                <!-- Dynamic Masking Shape -->
+                <div class="strategy-img" data-aos="fade-left">
+                    <img src="assets/matched/img_93edf365.jpg"
+                        alt="Construction Logistics">
+                    <div class="strategy-stat-box">
+                        <h3>100%</h3>
+                        <p>Safety Audited & Compliant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Service Network (Pulsing Grid) -->
+    <section class="network-section">
+        <div class="container network-content" data-aos="zoom-in">
+            <i class="fa-solid fa-map-location-dot"
+                style="font-size: 5rem; color: var(--c-gold); margin-bottom: 20px;"></i>
+            <h2 class="title mb-20" style="font-size: 3.5rem; color: var(--c-white);">Massive Operational <span
+                    class="text-gold">Coverage</span></h2>
+            <p style="font-size: 1.3rem; color: #CBD5E1; max-width: 800px; margin: 0 auto;">We proudly deploy our
+                fleets, warehousing depots, and civil engineering divisions continuously across all major nodes in
+                Uttarakhand and rapidly outward.</p>
+
+            <div class="location-tags">
+                <span data-aos="flip-up" data-aos-delay="0">Rudrapur</span>
+                <span data-aos="flip-up" data-aos-delay="50">Ramnagar</span>
+                <span data-aos="flip-up" data-aos-delay="100">Kashipur</span>
+                <span data-aos="flip-up" data-aos-delay="150">Haldwani</span>
+                <span data-aos="flip-up" data-aos-delay="200">Kathgodam</span>
+                <span data-aos="flip-up" data-aos-delay="250">Nainital</span>
+                <span data-aos="flip-up" data-aos-delay="300">Almora</span>
+                <span data-aos="flip-up" data-aos-delay="350">Ranikhet</span>
+                <span data-aos="flip-up" data-aos-delay="400">Lalkuan</span>
+                <span data-aos="flip-up" data-aos-delay="450">Nanakmatta</span>
+                <span data-aos="flip-up" data-aos-delay="500"
+                    style="color: var(--c-gold); border-color: var(--c-gold);"><i class="fa-solid fa-globe"></i> All
+                    India Interconnect</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container" data-aos="fade-up">
+            <h2>Let's Build & Grow Together</h2>
+            <p>We do not seek temporary jobs. We build monumental infrastructure, we migrate your most valuable
+                commercial assets securely, and we deliver pure, undisputed excellence across all state borders. You
+                need a trusted partner-let's discuss your requirements today.</p>
+            <a href="index.html#contact" class="btn-gold">Partner With Uttarakhand Infra Groups</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="corporate-footer" style="padding-top: 80px;">
+        <div class="container pb-40">
+            <div class="footer-grid">
+                <!-- Branding -->
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo mb-20">
+                        <span class="logo-icon"><i class="fa-solid fa-mountain-sun text-gold"></i></span>
+                        <div class="logo-text">
+                            <span class="brand-name text-white">Uttarakhand</span>
+                    <span class="brand-sub text-gray">Infra Groups</span>
+                        </div>
+                    </a>
+                    <p class="text-gray mb-30">Pioneering excellence in structural development, heavy logistics, and
+                        premium relocation services across the Himalayan region to all over India.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Our Journey</a></li>
+                        <li><a href="index.html#projects">Our Portfolio</a></li>
+                        <li><a href="vision.html" class="active">Our Vision & Mission</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Ecosystem</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Construction</a></li>
+                        <li><a href="index.html#services">Logistics & Transit</a></li>
+                        <li><a href="index.html#services">Relocations</a></li>
+                        <li><a href="index.html#services">Real Estate</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Reach Out</h4>
+                    <p class="text-gray mb-20">Have a project in mind? Let's discuss your requirements today.</p>
+                    <a href="index.html#contact" class="btn-primary" style="padding: 8px 16px;">Get a Quote</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom mt-60 pt-20">
+                <p class="text-gray">&copy; 2026 Uttarakhand Infra Groups. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fa-solid fa-robot"></i> Uttarakhand Infra Groups AI
+            </div>
+            <button id="chatbot-close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                Hello! I'm the Uttarakhand Infra Groups AI Assistant. Ask me anything about our construction, transport, or relocation
+                services in any language! &nbsp; (à¤¨à¤®à¤¸à¥à¤¤à¥‡! à¤®à¥ˆà¤‚ à¤¦à¥‡à¤µà¤­à¥‚à¤®à¤¿ à¤à¤†à¤ˆ à¤…à¤¸à¤¿à¤¸à¥à¤Ÿà¥‡à¤‚à¤Ÿ à¤¹à¥‚à¤à¥¤ à¤†à¤ª à¤®à¥à¤à¤¸à¥‡ à¤•à¤¿à¤¸à¥€ à¤­à¥€ à¤­à¤¾à¤·à¤¾ à¤®à¥‡à¤‚ à¤ªà¥‚à¤›
+                à¤¸à¤•à¤¤à¥‡ à¤¹à¥ˆà¤‚!)
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Type a message..." autocomplete="off">
+            <button id="chatbot-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chatbot-toggle-btn" id="chatbot-toggle-btn">
+        <i class="fa-solid fa-message"></i>
+    </button>
+
+    <script src="chatbot.js"></script>
+</body>
+
+</html>
+
+
+

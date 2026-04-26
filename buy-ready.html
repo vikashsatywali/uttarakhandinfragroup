@@ -1,0 +1,1221 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Buy premium ready-to-move houses and villas across Uttarakhand. Exclusive real estate properties from Uttarakhand Infra Groups.">
+    <title>Buy Ready House | Premium Real Estate | Uttarakhand Infra Groups</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+
+    <style>
+        /* Real Estate Specialized Styling */
+        
+        /* Hero Section Split Design */
+        .re-hero {
+            position: relative;
+            padding: 160px 0 100px 0;
+            background: var(--c-navy);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            min-height: 90vh;
+        }
+
+        .re-hero-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 55%;
+            height: 100%;
+            background: url('assets/images/img_71.jpg') no-repeat center center;
+            background-size: cover;
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        .re-hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(90deg, var(--c-navy) 0%, transparent 40%, rgba(10,25,47,0.4) 100%);
+        }
+
+        .re-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+
+        .re-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(212, 175, 55, 0.1);
+            border-left: 3px solid var(--c-gold);
+            color: var(--c-gold);
+            padding: 8px 20px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .re-title {
+            font-size: 4.8rem;
+            color: var(--c-white);
+            font-family: 'Playfair Display', serif;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            text-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .re-title span {
+            color: transparent;
+            -webkit-text-stroke: 1px var(--c-gold);
+            display: block;
+            margin-top: 10px;
+        }
+
+        .re-desc {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+        }
+
+        .re-hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+        }
+
+        .re-stat h4 {
+            font-size: 2.5rem;
+            color: var(--c-gold);
+            font-family: 'Outfit', sans-serif;
+            margin-bottom: 5px;
+            line-height: 1;
+        }
+
+        .re-stat p {
+            color: #94a3b8;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Floating Info Card */
+        .re-glass-card {
+            position: absolute;
+            bottom: 80px;
+            right: 10%;
+            background: rgba(10, 25, 47, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 30px;
+            border-radius: 12px;
+            z-index: 5;
+            max-width: 350px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+            animation: floatSlow 6s ease-in-out infinite alternate;
+        }
+
+        @keyframes floatSlow {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+
+        .re-glass-card .price {
+            font-size: 2rem;
+            color: var(--c-white);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .re-glass-card .price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #94a3b8;
+            text-transform: uppercase;
+        }
+
+        .re-card-features {
+            display: flex;
+            justify-content: space-between;
+            color: var(--c-gold);
+            font-size: 0.95rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 15px;
+        }
+
+        /* Search Filter Bar */
+        .re-search-bar {
+            background: var(--c-white);
+            border-radius: 100px;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 20px 40px rgba(10, 25, 47, 0.08);
+            transform: translateY(-50%);
+            position: relative;
+            z-index: 10;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .search-field {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #e2e8f0;
+            padding-right: 20px;
+        }
+
+        .search-field:last-of-type {
+            border-right: none;
+        }
+
+        .search-field label {
+            font-size: 0.8rem;
+            color: #64748b;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .search-field select, .search-field input {
+            border: none;
+            outline: none;
+            font-size: 1.05rem;
+            color: var(--c-navy);
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+            background: transparent;
+            width: 100%;
+        }
+
+        .btn-search {
+            background: var(--c-gold);
+            color: var(--c-navy);
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-search:hover {
+            background: var(--c-navy);
+            color: var(--c-gold);
+            transform: scale(1.05);
+        }
+
+        /* Property Listings Grid */
+        .listings-section {
+            padding: 80px 0 120px 0;
+            background: #f8fafc;
+        }
+
+        .property-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .property-card {
+            background: var(--c-white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .property-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(10,25,47,0.1);
+        }
+
+        .property-img {
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .property-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .property-card:hover .property-img img {
+            transform: scale(1.1);
+        }
+
+        .property-tag {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--c-navy);
+            color: var(--c-gold);
+            padding: 6px 15px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            z-index: 2;
+        }
+
+        .property-price {
+            position: absolute;
+            bottom: -20px;
+            right: 20px;
+            background: var(--c-gold);
+            color: var(--c-navy);
+            padding: 8px 16px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border-radius: 8px;
+            z-index: 2;
+            font-family: 'Outfit', sans-serif;
+            box-shadow: 0 10px 20px rgba(212,175,55,0.3);
+        }
+
+        .property-content {
+            padding: 40px 30px 30px;
+        }
+
+        .property-title {
+            font-size: 1.5rem;
+            color: var(--c-navy);
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .property-location {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .property-meta {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--c-navy);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .meta-item i {
+            color: var(--c-gold);
+        }
+
+        /* Lifestyle / Benefits Layout */
+        .lifestyle-section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .lifestyle-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .lifestyle-images {
+            position: relative;
+        }
+
+        .img-large {
+            width: 80%;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
+
+        .img-small {
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+            width: 50%;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+            border: 10px solid var(--c-white);
+        }
+
+        .lifestyle-content .check-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid var(--c-gold);
+            transition: all 0.3s ease;
+        }
+
+        .lifestyle-content .check-row:hover {
+            transform: translateX(10px);
+            background: var(--c-white);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        }
+
+        .check-row i {
+            font-size: 2rem;
+            color: var(--c-gold);
+        }
+
+        .check-row h4 {
+            font-size: 1.25rem;
+            color: var(--c-navy);
+            margin-bottom: 8px;
+        }
+
+        .check-row p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Immersive Banner */
+        .re-banner {
+            background: linear-gradient(rgba(10,25,47,0.9), rgba(10,25,47,0.9)), url('assets/images/img_60.jpg') fixed center center;
+            background-size: cover;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .re-banner h2 {
+            font-size: 3.5rem;
+            font-family: 'Playfair Display', serif;
+            color: var(--c-white);
+            margin-bottom: 20px;
+        }
+
+        .re-banner p {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        @media(max-width: 992px) {
+            .re-hero-bg { width: 100%; clip-path: none; opacity: 0.3; }
+            .re-hero-content { background: rgba(10,25,47,0.7); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); }
+            .re-search-bar { flex-direction: column; border-radius: 20px; padding: 25px; transform: translateY(-20px); }
+            .search-field { width: 100%; border-right: none; border-bottom: 1px solid #e2e8f0; padding-right: 0; padding-bottom: 15px; margin-bottom: 15px; }
+            .btn-search { width: 100%; border-radius: 12px; }
+            .lifestyle-grid { grid-template-columns: 1fr; }
+            .img-small { display: none; }
+            .img-large { width: 100%; }
+        }
+        
+        /* Premium Amenities & Features */
+        .amenities-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, var(--c-navy) 0%, #0a192f 100%);
+            color: var(--c-white);
+            position: relative;
+        }
+        
+        .amenities-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('https://www.transparenttextures.com/patterns/cubes.png');
+            opacity: 0.1;
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .amenity-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .amenity-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(212,175,55,0.5);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .amenity-card i {
+            font-size: 3rem;
+            color: var(--c-gold);
+            margin-bottom: 25px;
+            background: rgba(212,175,55,0.1);
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .amenity-card h4 {
+            font-size: 1.3rem;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 15px;
+            color: var(--c-gold);
+        }
+
+        .amenity-card p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Buying Process Timeline */
+        .buying-process {
+            padding: 120px 0;
+            background: #ffffff;
+        }
+
+        /* Premium Process Cards */
+        .process-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .proc-card {
+            background: #ffffff;
+            border: 1px solid rgba(10,25,47,0.05);
+            border-bottom: 4px solid var(--c-gold);
+            padding: 40px 30px;
+            border-radius: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            text-align: left;
+        }
+
+        .proc-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-color: rgba(212,175,55,0.3);
+        }
+
+        .proc-num {
+            position: absolute;
+            top: -15px;
+            right: -5px;
+            font-size: 8rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            color: rgba(212,175,55,0.08);
+            line-height: 1;
+            z-index: 0;
+            transition: all 0.5s ease;
+            user-select: none;
+        }
+
+        .proc-card:hover .proc-num {
+            color: rgba(212,175,55,0.15);
+            transform: scale(1.05) translateX(-5px);
+        }
+
+        .proc-card h4 {
+            font-size: 1.25rem;
+            color: var(--c-navy);
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+
+        .proc-card-icon {
+            color: var(--c-gold);
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+
+        .proc-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* FAQ Section */
+        .re-faq-section {
+            padding: 100px 0;
+            background: #f8fafc;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .faq-box {
+            background: var(--c-white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border-left: 4px solid var(--c-gold);
+            transition: all 0.3s ease;
+        }
+        
+        .faq-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        }
+
+        .faq-box h4 {
+            font-size: 1.15rem;
+            color: var(--c-navy);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            line-height: 1.4;
+        }
+        
+        .faq-box h4 i {
+            color: var(--c-gold);
+            margin-top: 4px;
+        }
+
+        .faq-box p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            padding-left: 32px;
+        }
+
+        @media(max-width: 992px) {
+            .timeline-container { flex-direction: column; align-items: center; gap: 40px; }
+            .timeline-container::before { display: none; }
+            .faq-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span class="branding-line"><i class="fa-solid fa-house-chimney"></i> Premium Ready-to-Move Real Estate</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <span class="support-text"><i class="fa-solid fa-clock"></i> Book a Property Tour Today</span>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Corporate Navbar -->
+    <nav class="navbar premium-navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-mountain-sun"></i></span>
+                <div class="logo-text">
+                    <span class="brand-name">Uttarakhand</span>
+                    <span class="brand-sub">Infra Groups</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">Company <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="vision.html">Our Vision & Mission</a></li>
+                        <li><a href="choose.html">Why Choose Us</a></li>
+                    </ul>
+                </li>
+                <li class="mega-menu-item">
+                    <a href="index.html#services" class="active">Services <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-city text-gold"></i> Construction & Builders</h3>
+                                <ul>
+                                    <li><a href="house-construction.html"><i class="fa-solid fa-angle-right"></i> House Construction</a></li>
+                                    <li><a href="villa.html"><i class="fa-solid fa-angle-right"></i> Villa Construction</a></li>
+                                    <li><a href="hotel-construction.html"><i class="fa-solid fa-angle-right"></i> Hotel / Resort</a></li>
+                                    <li><a href="shop-com.html"><i class="fa-solid fa-angle-right"></i> Shop & Commercial</a></li>
+                                    <li><a href="trunkey.html"><i class="fa-solid fa-angle-right"></i> Turnkey Projects</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-truck-fast text-gold"></i> Transport & Logistics</h3>
+                                <ul>
+                                    <li><a href="construction-material.html"><i class="fa-solid fa-angle-right"></i> Construction Material</a></li>
+                                    <li><a href="heavy-equipment.html"><i class="fa-solid fa-angle-right"></i> Heavy Equipment</a></li>
+                                    <li><a href="all-uk-goods.html"><i class="fa-solid fa-angle-right"></i> All Uttarakhand Goods</a></li>
+                                    <li><a href="bulk-supply.html"><i class="fa-solid fa-angle-right"></i> Bulk Supply</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-boxes-packing text-gold"></i> Movers & Packers</h3>
+                                <ul>
+                                    <li><a href="home-relocation.html"><i class="fa-solid fa-angle-right"></i> Home Relocation</a></li>
+                                    <li><a href="office-shifting.html"><i class="fa-solid fa-angle-right"></i> Office Shifting</a></li>
+                                    <li><a href="vehicle-transportation.html"><i class="fa-solid fa-angle-right"></i> Vehicle Transportation</a></li>
+                                    <li><a href="warehouse.html"><i class="fa-solid fa-angle-right"></i> Warehouse / Storage</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-house-chimney text-gold"></i> Real Estate</h3>
+                                <ul>
+                                    <li><a href="buy-ready.html" class="active"><i class="fa-solid fa-angle-right"></i> Buy Ready House</a></li>
+                                    <li><a href="sell-property.html"><i class="fa-solid fa-angle-right"></i> Sell Property</a></li>
+                                    <li><a href="plot-construction.html"><i class="fa-solid fa-angle-right"></i> Plot Construction</a></li>
+                                    <li><a href="consulation.html"><i class="fa-solid fa-angle-right"></i> Consulting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li class="dropdown">
+                    <a href="index.html#areas">Service Areas <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ramnagar.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ramnagar</a></li>
+                        <li><a href="kashipur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Kashipur</a></li>
+                        <li><a href="rudrapur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Rudrapur</a></li>
+                        <li><a href="haldwani.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Haldwani</a></li>
+                        <li><a href="almora.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Almora</a></li>
+                        <li><a href="consulation.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Nainital</a></li>
+                        <li><a href="ranikhet.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ranikhet</a></li>
+                        <li><a href="consulation.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Pirumdara</a></li>
+                        <li><a href="consulation.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Dehradun</a></li>
+                        <li><a href="consulation.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Mussoorie</a></li>
+                        <li style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 5px; padding-top: 5px;">
+                            <a href="index.html#quote" style="color: var(--c-gold) !important;"><i class="fa-solid fa-map-location-dot" style="margin-right: 8px;"></i>Enter Custom Location</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta-wrapper" style="display: flex; flex-direction: row; gap: 15px; align-items: center; flex-wrap: nowrap; white-space: nowrap;">
+                <a href="tel:+919456722521" class="btn-call" style="margin-right: 8px; padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); display: inline-flex; align-items: center;"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/919456722521" target="_blank" class="btn-whatsapp" style="padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); color: #25D366; display: inline-flex; align-items: center;"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="buy-ready.html" class="btn-primary" style="background: transparent; color: var(--c-gold); border: 2px solid var(--c-gold); padding: 8px 16px; font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-house-circle-check" style="margin-right: 8px;"></i> Buy Property</a>
+                <a href="sell-property.html" class="btn-primary" style="background: var(--c-gold); color: var(--c-navy); padding: 8px 16px; border: 2px solid var(--c-gold); font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-hand-holding-dollar" style="margin-right: 8px;"></i> Sell Property</a>
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Real Estate Hero -->
+    <header class="re-hero">
+        <div class="re-hero-bg"></div>
+        <div class="container" style="position: relative; width: 100%;">
+            <div class="re-hero-content" data-aos="fade-right">
+                <div class="re-badge"><i class="fa-solid fa-key" style="margin-right:8px;"></i> Handpicked Properties & Societies</div>
+                <h1 class="re-title">Find Your <span>Dream Home</span> Today.</h1>
+                <p class="re-desc">Experience unmatched luxury and modern living. We bring you exclusive ready-to-move residences, premium gated societies, and trusted residential colonies in Uttarakhand's most serene locations.</p>
+                
+                <div class="re-hero-stats">
+                    <div class="re-stat">
+                        <h4>150+</h4>
+                        <p>Properties Sold</p>
+                    </div>
+                    <div class="re-stat">
+                        <h4>12</h4>
+                        <p>Prime Locations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Display Card -->
+            <div class="re-glass-card" data-aos="fade-up" data-aos-delay="400">
+                <div style="margin-bottom: 15px; font-size: 0.9rem; color: #cbd5e1; text-transform: uppercase; letter-spacing: 1px;">Premium Offerings</div>
+                <div class="price">From ₹20 <span>Lakh</span></div>
+                <div style="color: var(--c-white); font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 10px;">Custom & Ready Properties</div>
+                <div style="color: #cbd5e1; font-size: 0.85rem; margin-bottom: 20px;"><i class="fa-solid fa-map-location-dot" style="color:var(--c-gold);"></i> Across Prime Uttarakhand Locations</div>
+                <div class="re-card-features">
+                    <span><i class="fa-solid fa-file-shield"></i> 100% Approved</span>
+                    <span><i class="fa-solid fa-handshake"></i> Direct Owner Deals</span>
+                </div>
+            </div>
+
+            <div class="re-search-bar" style="flex-direction: row; border-radius: 100px; padding: 15px 30px; transform: translateY(-50%);">
+                <div class="search-field" style="width: auto; border-right: 1px solid #e2e8f0; padding-right: 20px; padding-bottom: 0; margin-bottom: 0;">
+                    <label>Location</label>
+                    <select>
+                        <option>All Locations</option>
+                        <option>Dehradun</option>
+                        <option>Haldwani</option>
+                    </select>
+                </div>
+                <div class="search-field" style="width: auto; border-right: 1px solid #e2e8f0; padding-right: 20px; padding-bottom: 0; margin-bottom: 0;">
+                    <label>Property Type</label>
+                    <select>
+                        <option>All Types</option>
+                        <option>Villas</option>
+                        <option>Apartments</option>
+                    </select>
+                </div>
+                <div class="search-field" style="width: auto; border-right: none; padding-right: 0; padding-bottom: 0; margin-bottom: 0;">
+                    <label>Budget Range</label>
+                    <select>
+                        <option>₹20 Lakh - ₹40 Lakh</option>
+                        <option>₹40 Lakh - ₹80 Lakh</option>
+                        <option>₹80 Lakh - ₹1 Crore</option>
+                        <option>₹1 Crore+</option>
+                    </select>
+                </div>
+
+
+
+
+
+            </div>
+            <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
+    <!-- Listings Section -->
+    <section class="listings-section">
+        <div class="container">
+            <div class="section-header center" data-aos="zoom-in">
+                <span class="subtitle text-gold">EXCLUSIVE CATALOGUE</span>
+                <h2 class="title text-navy">Ready-to-Move <span class="text-gold">Residences</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="property-grid">
+                <!-- Property 1 -->
+                <div class="property-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="property-img">
+                        <span class="property-tag">High Demand</span>
+                        <img src="assets/matched/img_d197ad9c.jpg" alt="Villa exterior">
+                        <div class="property-price">From ₹22 L</div>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Modern Duplex Houses</h3>
+                        <p class="property-location"><i class="fa-solid fa-location-dot"></i> City Center Locations</p>
+                        <div class="property-meta">
+                            <div class="meta-item"><i class="fa-solid fa-bed"></i> 2/3 Beds</div>
+                            <div class="meta-item"><i class="fa-solid fa-bath"></i> 2 Baths</div>
+                            <div class="meta-item"><i class="fa-solid fa-ruler-combined"></i> ~1200 sqft</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="property-img">
+                        <span class="property-tag">Furnished</span>
+                        <img src="assets/matched/img_d197ad9c.jpg" alt="Modern House">
+                        <div class="property-price">From ₹48 L</div>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Gated Society Villas</h3>
+                        <p class="property-location"><i class="fa-solid fa-location-dot"></i> Prime Transit Corridors</p>
+                        <div class="property-meta">
+                            <div class="meta-item"><i class="fa-solid fa-bed"></i> 3 Beds</div>
+                            <div class="meta-item"><i class="fa-solid fa-bath"></i> 3 Baths</div>
+                            <div class="meta-item"><i class="fa-solid fa-ruler-combined"></i> ~1600 sqft</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="property-img">
+                        <span class="property-tag" style="background:#b45309;">Premium</span>
+                        <img src="assets/matched/img_b800c3ab.jpg" alt="Luxury Home">
+                        <div class="property-price">From ₹85 L</div>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Luxury Hillside Mansions</h3>
+                        <p class="property-location"><i class="fa-solid fa-location-dot"></i> Exclusive Highland Districts</p>
+                        <div class="property-meta">
+                            <div class="meta-item"><i class="fa-solid fa-bed"></i> 4+ Beds</div>
+                            <div class="meta-item"><i class="fa-solid fa-bath"></i> 4 Baths</div>
+                            <div class="meta-item"><i class="fa-solid fa-ruler-combined"></i> ~2500 sqft</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property 4 -->
+                <div class="property-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="property-img">
+                        <span class="property-tag">Colony Layout</span>
+                        <img src="assets/matched/img_8ae62eba.jpg" alt="Spacious Apartment">
+                        <div class="property-price">From ₹25 L</div>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Developed Colony Houses</h3>
+                        <p class="property-location"><i class="fa-solid fa-location-dot"></i> Master-Planned Townships</p>
+                        <div class="property-meta">
+                            <div class="meta-item"><i class="fa-solid fa-bed"></i> 2 Beds</div>
+                            <div class="meta-item"><i class="fa-solid fa-bath"></i> 2 Baths</div>
+                            <div class="meta-item"><i class="fa-solid fa-ruler-combined"></i> ~1000 sqft</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 5 -->
+                <div class="property-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="property-img">
+                        <span class="property-tag" style="background:var(--c-gold); color:var(--c-navy);">Society Apartments</span>
+                        <img src="assets/matched/img_b800c3ab.jpg" alt="Premium Suburb House">
+                        <div class="property-price">From ₹50 L</div>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Modern Society Apartments</h3>
+                        <p class="property-location"><i class="fa-solid fa-location-dot"></i> Central Hubs</p>
+                        <div class="property-meta">
+                            <div class="meta-item"><i class="fa-solid fa-bed"></i> 3 Beds</div>
+                            <div class="meta-item"><i class="fa-solid fa-bath"></i> 2 Baths</div>
+                            <div class="meta-item"><i class="fa-solid fa-ruler-combined"></i> ~1500 sqft</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 6 -->
+                <div class="property-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="property-img">
+                        <span class="property-tag" style="background:#0a192f; color:var(--c-gold);">Commercial</span>
+                        <img src="assets/matched/img_c3cd6f45.jpg" alt="Premium Office Interior">
+                        <div class="property-price">From ₹25 L</div>
+                    </div>
+                    <div class="property-content">
+                        <h3 class="property-title">Premium Office Spaces</h3>
+                        <p class="property-location"><i class="fa-solid fa-location-dot"></i> Prime Business Corridors</p>
+                        <div class="property-meta">
+                            <div class="meta-item"><i class="fa-solid fa-briefcase"></i> Ready-to-Move</div>
+                            <div class="meta-item"><i class="fa-solid fa-car"></i> Dedicated Parking</div>
+                            <div class="meta-item"><i class="fa-solid fa-ruler-combined"></i> 500+ sqft</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="buy-ready.html" class="btn-outline">View All Listings</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Buy Ready to Move Section -->
+    <section class="lifestyle-section">
+        <div class="container">
+            <div class="lifestyle-grid">
+                <div class="lifestyle-images" data-aos="fade-right">
+                    <img src="assets/matched/img_b800c3ab.jpg" class="img-large" alt="Luxury Living Room">
+                    <img src="assets/matched/img_5bfd4ad9.jpg" class="img-small" alt="Modern Kitchen">
+                </div>
+                <div class="lifestyle-content" data-aos="fade-left">
+                    <h5 class="subtitle text-gold">UNMATCHED CONVENIENCE</h5>
+                    <h2 class="title text-navy" style="font-size: 3rem;">Why Choose <span class="text-gold">Ready-to-Move?</span></h2>
+                    <p style="color:#64748b; font-size: 1.15rem; margin-bottom: 40px; line-height:1.7;">Skip the construction delays, avoid increasing raw material costs, and instantly upgrade your lifestyle. Our ready residences are fully compliant and wait for nothing but your signature.</p>
+
+                    <div class="check-row">
+                        <i class="fa-solid fa-clock-fast"></i>
+                        <div>
+                            <h4>Zero Waiting Period</h4>
+                            <p>Receive the keys instantly upon registry. No rental costs while waiting for construction to finish.</p>
+                        </div>
+                    </div>
+                    <div class="check-row">
+                        <i class="fa-solid fa-eye"></i>
+                        <div>
+                            <h4>What You See is What You Get</h4>
+                            <p>Examine the physical quality of the materials, space, and view before making any financial commitment.</p>
+                        </div>
+                    </div>
+                    <div class="check-row">
+                        <i class="fa-solid fa-file-shield"></i>
+                        <div>
+                            <h4>Legally Clear & Compliant</h4>
+                            <p>Every listed property holds verified completion certificates without any pending municipal dues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Amenities / Society Features -->
+    <section class="amenities-section">
+        <div class="container">
+            <div class="section-header center" data-aos="zoom-in">
+                <span class="subtitle text-gold">WORLD-CLASS INFRASTRUCTURE</span>
+                <h2 class="title text-white">Standard Society <span class="text-gold">Amenities</span></h2>
+                <div class="divider" style="background:var(--c-gold);"></div>
+            </div>
+
+            <div class="amenities-grid">
+                <div class="amenity-card" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h4>Tier-1 Security</h4>
+                    <p>24/7 CCTV surveillance, manned gates, and digital entry protocols ensuring complete safety for your family.</p>
+                </div>
+                <div class="amenity-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h4>Power & Water</h4>
+                    <p>Uninterrupted eco-friendly power backup and dedicated municipal or borewell water supply with filtration grids.</p>
+                </div>
+                <div class="amenity-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-tree"></i>
+                    <h4>Green Landscapes</h4>
+                    <p>Over 30% open space dedicated to manicured parks, jogging tracks, and specialized kids' play areas.</p>
+                </div>
+                <div class="amenity-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-road"></i>
+                    <h4>Wide Avenues</h4>
+                    <p>30ft to 40ft wide internal RCC roads preventing congestion and allowing smooth premium vehicle navigation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buying Process -->
+    <section class="buying-process">
+        <div class="container">
+            <div class="section-header center" data-aos="zoom-in">
+                <span class="subtitle text-gold">TRANSPARENT PROCESS</span>
+                <h2 class="title text-navy">Your Path To <span class="text-gold">Ownership</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="process-cards">
+                <div class="proc-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="proc-num">01</div>
+                    <i class="fa-solid fa-map-location-dot proc-card-icon"></i>
+                    <h4>Discovery & Visit</h4>
+                    <p>We analyze your budget and preferences, curating a specific list of properties. Enjoy a guided VIP site visit.</p>
+                </div>
+                <div class="proc-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="proc-num">02</div>
+                    <i class="fa-solid fa-scale-balanced proc-card-icon"></i>
+                    <h4>Legal Vetting</h4>
+                    <p>Our designated legal team double-checks every property paper and layout approval, ensuring zero disputes.</p>
+                </div>
+                <div class="proc-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="proc-num">03</div>
+                    <i class="fa-solid fa-file-invoice-dollar proc-card-icon"></i>
+                    <h4>Financial Assistance</h4>
+                    <p>Need a loan? We facilitate instantaneous tie-ups with leading national banks at preferential interest rates.</p>
+                </div>
+                <div class="proc-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="proc-num">04</div>
+                    <i class="fa-solid fa-house-chimney proc-card-icon"></i>
+                    <h4>Registry & Handover</h4>
+                    <p>We manage all registry and mutation hurdles. You simply sign the dotted line and walk into your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="re-faq-section">
+        <div class="container">
+            <div class="section-header center" data-aos="fade-up">
+                <span class="subtitle text-gold">KNOWLEDGE HUB</span>
+                <h2 class="title text-navy">Frequently Asked <span class="text-gold">Questions</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-box" data-aos="fade-right">
+                    <h4><i class="fa-solid fa-circle-question"></i> Are colony plots approved by authorities?</h4>
+                    <p>Absolutely. Every gated society and colony we represent has been vetted and approved by specific regional development authorities like MDDA, SIDA, or local Nagar Nigams depending on the zone.</p>
+                </div>
+                <div class="faq-box" data-aos="fade-left">
+                    <h4><i class="fa-solid fa-circle-question"></i> Do you help with interior modifications?</h4>
+                    <p>Yes. As a primary construction and development firm, Uttarakhand Infra Groups can alter modular kitchens, flooring, or color palettes of "Ready-to-Move" houses before you transition in.</p>
+                </div>
+                <div class="faq-box" data-aos="fade-right">
+                    <h4><i class="fa-solid fa-circle-question"></i> Is a ready-to-move costlier than under-construction?</h4>
+                    <p>While base costs might seem slightly higher, you save heavily on waiting time, rent, and inflation. Plus, there is zero risk of project stall, making ready-to-move financially brilliant.</p>
+                </div>
+                <div class="faq-box" data-aos="fade-left">
+                    <h4><i class="fa-solid fa-circle-question"></i> What are the maintenance charges in societies?</h4>
+                    <p>It varies based on luxury segments. Standard colonies range from ₹1000 - ₹2500 per month governing park maintenance, security staff, and common streetlights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Immersive Banner -->
+    <section class="re-banner" data-aos="zoom-in">
+        <div class="container">
+            <h2>Experience Virtual Tours</h2>
+            <p>Can't visit right away? Request a high-definition 3D virtual walkthrough for our premium listings directly from your home.</p>
+            <a href="index.html#contact" class="btn-primary btn-large"><i class="fa-solid fa-vr-cardboard" style="margin-right:8px;"></i> Request Walkthrough</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="corporate-footer">
+        <div class="container pt-80 pb-40">
+            <div class="footer-grid">
+                <!-- Branding -->
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo mb-20">
+                        <span class="logo-icon"><i class="fa-solid fa-mountain-sun text-gold"></i></span>
+                        <div class="logo-text">
+                            <span class="brand-name text-white">Uttarakhand</span>
+                    <span class="brand-sub text-gray">Infra Groups</span>
+                        </div>
+                    </a>
+                    <p class="text-gray mb-30">Pioneering excellence in structural development, heavy logistics, and
+                        premium relocation services across the Himalayan region.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Our Firm</a></li>
+                        <li><a href="vision.html">Vision & Mission</a></li>
+                        <li><a href="choose.html">Why Choose Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="house-construction.html">House Construction</a></li>
+                        <li><a href="all-uk-goods.html">Heavy Transit & Logistics</a></li>
+                        <li><a href="vehicle-transportation.html">Vehicle Relocation</a></li>
+                        <li><a href="buy-ready.html" class="active">Real Estate Appraisals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Market Insights</h4>
+                    <p class="text-gray mb-20">Subscribe to our monthly newsletter for real estate reports in Uttarakhand.</p>
+                    <div class="newsletter-pro">
+                        <input type="email" placeholder="Business Email">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom mt-60 pt-20">
+                <p class="text-gray">&copy; 2026 Uttarakhand Infra Groups. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fa-solid fa-robot"></i> Uttarakhand Infra Groups AI
+            </div>
+            <button class="chatbot-minimize" id="chatbot-minimize"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">Hello! I am Uttarakhand Infra Groups AI. Are you looking to buy a property, construct a house, or need relocation services?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-text" placeholder="Type your question...">
+            <button id="chatbot-send"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <div class="chatbot-toggle" id="chatbot-toggle">
+        <i class="fa-solid fa-message"></i>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

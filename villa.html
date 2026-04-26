@@ -1,0 +1,1066 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We specialize in premium villa construction services across Uttarakhand. Build your dream luxury home, modern designer villa, or farmhouse. Ramnagar, Haldwani, Kashipur.">
+    <title>Villa Construction Services in Uttarakhand | Luxury Home Builders</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+
+    <style>
+        /* Modern Premium Decorations */
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        .page-header {
+            position: relative;
+            padding: 160px 0 80px 0;
+            background: linear-gradient(rgba(10, 25, 47, 0.65), rgba(10, 25, 47, 0.9)), url('assets/images/img_42.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Hero Abstract Shapes */
+        .header-floating-shapes {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .hero-shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(90px);
+            opacity: 0.4;
+            animation: floatShape 12s infinite alternate ease-in-out;
+        }
+        .hero-shape-1 {
+            width: 500px; height: 500px;
+            background: var(--c-gold);
+            top: -150px; left: -100px;
+        }
+        .hero-shape-2 {
+            width: 400px; height: 400px;
+            background: #1e3a8a;
+            bottom: -100px; right: 5%;
+            animation-delay: -6s;
+        }
+
+        @keyframes floatShape {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(60px, 80px) scale(1.1); }
+        }
+
+        .header-content-wrapper {
+            position: relative;
+            z-index: 2;
+            max-width: 950px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .header-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            color: var(--c-gold);
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+            animation: pulseGlow 3s infinite alternate;
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 15px rgba(212, 175, 55, 0.2); }
+            100% { box-shadow: 0 0 35px rgba(212, 175, 55, 0.6); }
+        }
+
+        .page-title {
+            font-size: 4rem;
+            color: var(--c-white);
+            margin-bottom: 25px;
+            line-height: 1.1;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            text-shadow: 4px 6px 15px rgba(0,0,0,0.6);
+        }
+
+        .page-desc {
+            font-size: 1.45rem;
+            color: #E2E8F0;
+            line-height: 1.7;
+            margin: 0 auto 40px auto;
+            max-width: 800px;
+            text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+        }
+
+        /* Intro Section  */
+        .intro-container {
+            padding: 120px 0;
+            background: #ffffff;
+            /* Dot pattern decoration */
+            background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
+            background-size: 40px 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .intro-text p {
+            font-size: 1.3rem;
+            color: #334155;
+            line-height: 1.8;
+            max-width: 850px;
+            margin: 0 auto 20px auto;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(212, 175, 55, 0.15) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 15px;
+            padding: 25px 35px;
+            margin: 40px auto;
+            max-width: 900px;
+            font-weight: 600;
+            color: var(--c-navy);
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+            position: relative;
+            overflow: hidden;
+            transform: translateZ(0); /* For Safari hardware accel */
+        }
+        /* Shimmer Effect */
+        .highlight-box::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.7), transparent);
+            transform: skewX(-25deg);
+            animation: shineLeftRight 5s infinite;
+        }
+        @keyframes shineLeftRight { 0% { left: -100%; } 20% { left: 200%; } 100% { left: 200%; } }
+
+        /* Solutions Grid */
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            margin-top: 60px;
+            justify-content: center;
+        }
+
+        .solution-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid #e2e8f0;
+            padding: 50px 35px;
+            border-radius: 20px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            z-index: 1;
+        }
+
+        /* Decorative gradient at the bottom of cards */
+        .solution-card::before {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; width: 100%; height: 5px;
+            background: linear-gradient(90deg, var(--c-gold), #fcd34d);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .solution-card:hover::before { opacity: 1; }
+
+        .solution-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(10, 25, 47, 0.1);
+            border-color: rgba(212, 175, 55, 0.5);
+        }
+
+        .solution-card i {
+            font-size: 3.5rem;
+            background: -webkit-linear-gradient(45deg, var(--c-gold), #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 25px;
+            display: inline-block;
+            transition: transform 0.4s ease;
+        }
+
+        .solution-card:hover i { transform: scale(1.1) rotate(5deg); }
+
+        .solution-card h3 {
+            font-size: 1.5rem;
+            color: var(--c-navy);
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        .solution-card ul {
+            list-style: none; padding: 0; margin-top: 15px;
+        }
+        
+        .solution-card ul li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 8px;
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        .solution-card ul li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--c-gold);
+            font-size: 0.8rem;
+        }
+
+
+        /* End-to-End Timeline */
+        .process-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #0f172a 0%, var(--c-navy) 100%);
+            color: var(--c-white);
+            position: relative;
+        }
+        
+        /* Subtle Overlay texture */
+        .process-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .process-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 40px 30px;
+            border-radius: 15px;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        /* Big Watermark Number */
+        .process-box::after {
+            content: attr(data-step);
+            position: absolute;
+            right: -10px;
+            bottom: -20px;
+            font-size: 8rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.03);
+            z-index: -1;
+            transition: color 0.4s ease;
+        }
+
+        .process-box:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(212, 175, 55, 0.6);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        
+        .process-box:hover::after {
+            color: rgba(212, 175, 55, 0.1);
+        }
+
+        .process-box h4 {
+            font-size: 1.4rem;
+            color: var(--c-gold);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .process-box h4 i {
+            background: rgba(212, 175, 55, 0.15);
+            padding: 12px;
+            border-radius: 50%;
+            color: var(--c-gold);
+        }
+
+        .process-box ul { list-style: none; padding: 0; margin: 0; }
+        .process-box ul li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 12px;
+            color: #CBD5E1;
+            font-size: 1.05rem;
+            line-height: 1.5;
+            transition: color 0.3s ease;
+        }
+
+        .process-box:hover ul li { color: #ffffff; }
+
+        .process-box ul li::before {
+            content: '\e09a';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 3px;
+            color: var(--c-gold);
+            font-size: 0.9rem;
+        }
+
+        /* Own Plot Section */
+        .own-plot-section {
+            padding: 120px 0;
+            background: #ffffff;
+            position: relative;
+        }
+
+        .split-container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .split-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .split-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(10, 25, 47, 0.15);
+            transition: transform 0.5s ease;
+        }
+        
+        .split-image:hover img { transform: scale(1.02); }
+
+        /* Glassmorphism Badge */
+        .glass-badge {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            background: rgba(10, 25, 47, 0.85);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            color: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            text-align: center;
+            z-index: 2;
+            animation: floatBadge 4s infinite ease-in-out alternate;
+        }
+        
+        .glass-badge h3 { font-size: 2.5rem; color: var(--c-gold); font-family: 'Outfit', sans-serif; margin-bottom: 5px; line-height: 1; }
+        .glass-badge p { font-size: 0.95rem; text-transform: uppercase; font-weight: 600; letter-spacing: 2px; margin: 0; color: #cbd5e1; }
+
+        /* Investment Badge */
+        .glass-badge-left {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(212, 175, 55, 0.6);
+            color: var(--c-navy);
+            padding: 20px 30px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            z-index: 2;
+        }
+        .glass-badge-left h4 { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 10px; color: var(--c-navy); }
+        .glass-badge-left ul { list-style: none; padding: 0; margin: 0; }
+        .glass-badge-left ul li { font-size: 0.9rem; font-weight: 600; margin-bottom: 5px; }
+        .glass-badge-left ul li i { color: var(--c-gold); margin-right: 5px; }
+
+        @keyframes floatBadge {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-15px); }
+        }
+
+        .split-content { flex: 1; }
+
+        .check-list { margin-top: 35px; }
+
+        .check-list li {
+            font-size: 1.15rem;
+            color: var(--c-navy);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .check-list li i { color: var(--c-gold); font-size: 1.4rem; margin-top: 2px; }
+
+        .why-tags {
+            display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px;
+        }
+        .why-tag {
+            background: transparent;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--c-navy);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            display: flex; align-items: center; gap: 5px;
+        }
+        
+        .why-tag i { color: var(--c-gold); transition: transform 0.3s ease; }
+        .why-tag:hover {
+            background: var(--c-navy); color: var(--c-white);
+            border-color: var(--c-navy);
+            transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .why-tag:hover i { transform: scale(1.2); }
+
+
+        /* Coverage Areas */
+        .locations-box {
+            background: #f8fafc;
+            padding: 70px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 80px;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Map pattern in background */
+        .locations-box::before {
+            content:''; position:absolute; top:0; left:0; width:100%; height:100%;
+            background-image: radial-gradient(rgba(10,25,47,0.03) 2px, transparent 2px); background-size: 30px 30px; z-index: 0;
+        }
+
+        .location-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 40px; position: relative; z-index: 1;}
+
+        .location-tags span {
+            background: var(--c-white);
+            color: var(--c-navy);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: default;
+        }
+        
+        .location-tags span:hover {
+            background: var(--c-navy);
+            color: var(--c-gold);
+            border-color: var(--c-navy);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(10, 25, 47, 0.15);
+        }
+
+        /* Approach section details */
+        .approach-section { padding: 100px 0; background: #f8fafc; border-top: 1px solid #e2e8f0;}
+        .approach-box {
+            background: var(--c-white); padding: 50px; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); max-width: 900px; margin: 0 auto;
+            position: relative;
+        }
+        .approach-box::before {
+            content:'\f10d'; font-family: 'Font Awesome 6 Free'; font-weight:900; position:absolute; top: -20px; left: 40px;
+            font-size: 3rem; color: rgba(212,175,55,0.2); background: #fff; padding: 0 10px;
+        }
+
+        /* Animated Gradient CTA Footer Banner */
+        .cta-footer-banner {
+            background: linear-gradient(-45deg, #1e3a8a, var(--c-navy), #b8860b, var(--c-gold));
+            background-size: 400% 400%;
+            animation: gradientAnim 10s ease infinite;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        @keyframes gradientAnim { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+        .cta-footer-banner::before {
+            content: ''; position: absolute; top:0; left:0; width:100%; height:100%;
+            background: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23ffffff" fill-opacity="0.05" fill-rule="evenodd"%3E%3Ccircle cx="3" cy="3" r="3"/%3E%3Ccircle cx="13" cy="13" r="3"/%3E%3C/g%3E%3C/svg%3E'); z-index: 0;
+        }
+
+        .cta-footer-banner .container { position: relative; z-index: 1; }
+
+        .cta-footer-banner h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--c-white);
+            margin-bottom: 25px;
+            text-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-footer-banner p {
+            font-size: 1.35rem;
+            color: rgba(255,255,255,0.9);
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        .cta-btn-gold {
+            background: var(--c-white);
+            color: var(--c-navy);
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .cta-btn-gold:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            background: var(--c-navy);
+            color: var(--c-gold);
+        }
+
+        @media(max-width: 992px) {
+            .split-container { flex-direction: column; }
+            .page-title { font-size: 4rem; }
+            .hero-shape { filter: blur(50px); opacity: 0.3; }
+            .glass-badge-left { display: none; }
+        }
+        @media(max-width: 768px) {
+            .page-title { font-size: 3rem; }
+            .locations-box { padding: 40px 20px; }
+            .glass-badge { right: 20px; bottom: -20px; padding: 20px; }
+            .glass-badge h3 { font-size: 2rem; }
+            .page-header { padding: 120px 0 60px 0; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span class="branding-line"><i class="fa-solid fa-truck-fast"></i> Complete Infrastructure & Logistics Solutions - Uttarakhand to All India</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <span class="support-text"><i class="fa-solid fa-clock"></i> 24/7 Support</span>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Corporate Navbar -->
+    <nav class="navbar premium-navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-mountain-sun"></i></span>
+                <div class="logo-text">
+                    <span class="brand-name">Uttarakhand</span>
+                    <span class="brand-sub">Infra Groups</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">Company <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="vision.html">Our Vision & Mission</a></li>
+                        <li><a href="choose.html">Why Choose Us</a></li>
+                    </ul>
+                </li>
+                <li class="mega-menu-item">
+                    <a href="index.html#services" class="active">Services <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-city text-gold"></i> Construction & Builders</h3>
+                                <ul>
+                                    <li><a href="house-construction.html"><i class="fa-solid fa-angle-right"></i> House Construction</a></li>
+                                    <li><a href="villa.html" class="active"><i class="fa-solid fa-angle-right"></i> Villa Construction</a></li>
+                                    <li><a href="hotel-construction.html"><i class="fa-solid fa-angle-right"></i> Hotel / Resort</a></li>
+                                    <li><a href="shop-com.html"><i class="fa-solid fa-angle-right"></i> Shop & Commercial</a></li>
+                                    <li><a href="trunkey.html"><i class="fa-solid fa-angle-right"></i> Turnkey Projects</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-truck-fast text-gold"></i> Transport & Logistics</h3>
+                                <ul>
+                                    <li><a href="construction-material.html"><i class="fa-solid fa-angle-right"></i> Construction Material</a></li>
+                                    <li><a href="heavy-equipment.html"><i class="fa-solid fa-angle-right"></i> Heavy Equipment</a></li>
+                                    <li><a href="all-uk-goods.html"><i class="fa-solid fa-angle-right"></i> All Uttarakhand Goods</a></li>
+                                    <li><a href="bulk-supply.html"><i class="fa-solid fa-angle-right"></i> Bulk Supply</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-boxes-packing text-gold"></i> Movers & Packers</h3>
+                                <ul>
+                                    <li><a href="home-relocation.html"><i class="fa-solid fa-angle-right"></i> Home Relocation</a></li>
+                                    <li><a href="office-shifting.html"><i class="fa-solid fa-angle-right"></i> Office Shifting</a></li>
+                                    <li><a href="vehicle-transportation.html"><i class="fa-solid fa-angle-right"></i> Vehicle Transportation</a></li>
+                                    <li><a href="warehouse.html"><i class="fa-solid fa-angle-right"></i> Warehouse / Storage</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-house-chimney text-gold"></i> Real Estate</h3>
+                                <ul>
+                                    <li><a href="buy-ready.html"><i class="fa-solid fa-angle-right"></i> Buy Ready House</a></li>
+                                    <li><a href="sell-property.html"><i class="fa-solid fa-angle-right"></i> Sell Property</a></li>
+                                    <li><a href="plot-construction.html"><i class="fa-solid fa-angle-right"></i> Plot Construction</a></li>
+                                    <li><a href="consulation.html"><i class="fa-solid fa-angle-right"></i> Consulting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li class="dropdown">
+                    <a href="index.html#areas">Service Areas <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rudrapur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Rudrapur</a></li>
+                        <li><a href="haldwani.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Haldwani</a></li>
+                        <li><a href="ramnagar.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ramnagar</a></li>
+                        <li><a href="almora.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Almora</a></li>
+                        <li><a href="ranikhet.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ranikhet</a></li>
+                        <li><a href="kashipur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Kashipur</a></li>
+                        <li style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 5px; padding-top: 5px;">
+                            <a href="index.html#quote" style="color: var(--c-gold) !important;"><i class="fa-solid fa-map-location-dot" style="margin-right: 8px;"></i>Enter Custom Location</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta-wrapper" style="display: flex; flex-direction: row; gap: 15px; align-items: center; flex-wrap: nowrap; white-space: nowrap;">
+                <a href="tel:+919456722521" class="btn-call" style="margin-right: 8px; padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); display: inline-flex; align-items: center;"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/919456722521" target="_blank" class="btn-whatsapp" style="padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); color: #25D366; display: inline-flex; align-items: center;"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="buy-ready.html" class="btn-primary" style="background: transparent; color: var(--c-gold); border: 2px solid var(--c-gold); padding: 8px 16px; font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-house-circle-check" style="margin-right: 8px;"></i> Buy Property</a>
+                <a href="sell-property.html" class="btn-primary" style="background: var(--c-gold); color: var(--c-navy); padding: 8px 16px; border: 2px solid var(--c-gold); font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-hand-holding-dollar" style="margin-right: 8px;"></i> Sell Property</a>
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" id="home">
+        <!-- Floating Animated Blobs -->
+        <div class="header-floating-shapes">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
+
+        <div class="container header-content-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+            <span class="header-badge"><i class="fa-solid fa-crown" style="margin-right:8px;"></i> Luxury Home Builders in Uttarakhand</span>
+            <h1 class="page-title">Premium Villa Construction</h1>
+            <p class="page-desc">
+                Looking to build a luxury villa in Uttarakhand? We specialize in premium villa construction services, delivering modern, elegant, and high-quality homes.
+            </p>
+            <a href="index.html#contact" class="btn-primary btn-large btn-glow"><i class="fa-solid fa-calculator" style="margin-right:8px;"></i> Get a Villa Quote</a>
+        </div>
+    </header>
+
+    <!-- Intro / What We Do -->
+    <section class="intro-container">
+        <div class="container" data-aos="fade-up">
+            <h5 class="subtitle text-gold mb-10" style="letter-spacing:3px;">A STATEMENT OF LIFESTYLE</h5>
+            <h2 class="title" style="color: var(--c-navy); margin-bottom: 25px;">Build Your Dream <span class="text-gold">Luxury Villa</span></h2>
+            
+            <div class="intro-text">
+                <p>A villa is not just a house - it's a statement of lifestyle. From concept to completion, we ensure your villa is built with precision, durability, and world-class premium finishing.</p>
+                <p>We create breathtaking luxury villas that naturally harmonize with Uttarakhand's unmatched beauty, equipped with spacious layouts, lush natural light, and brilliant aesthetics.</p>
+            </div>
+
+            <div class="highlight-box" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-gem fa-beat" style="font-size: 1.8rem; color: var(--c-gold);"></i>
+                <div style="text-align: left;">
+                    Designed precisely for ultimate comfort, outstanding beauty, and long-term luxury living.
+                </div>
+            </div>
+
+            <!-- Specializations Grid -->
+            <div class="solutions-grid">
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fa-solid fa-house-chimney-window"></i>
+                    <h3>Luxury Villa Construction</h3>
+                    <p class="text-gray">High-end bespoke villas featuring premium architectural design and thoroughly modern robust features.</p>
+                    <ul>
+                        <li>Smart Space Utility</li>
+                        <li>High-End Materials</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h3>Modern Designer Villas</h3>
+                    <p class="text-gray">Stylish and striking homes engineered with unique elevation patterns and brilliant modern architecture.</p>
+                    <ul>
+                        <li>Contemporary Layouts</li>
+                        <li>Signature Elevations</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-tree"></i>
+                    <h3>Farmhouse Villas</h3>
+                    <p class="text-gray">Expansive, elegant, and nature-friendly villas built specifically for peaceful, deeply calm living.</p>
+                    <ul>
+                        <li>Scenic Integrations</li>
+                        <li>Spacious Open Sites</li>
+                    </ul>
+                </div>
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Duplex & Triplex Villas</h3>
+                    <p class="text-gray">Majestic multi-floor villas optimized for large joint families and phenomenal high-end rental options.</p>
+                    <ul>
+                        <li>Vertical Luxury</li>
+                        <li>Independent Floors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End-to-End Solutions -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header center light" data-aos="fade-up">
+                <span class="subtitle text-gold">Turnkey Luxury Expertise</span>
+                <h2 class="title text-white">End-to-End <span class="text-gold">Villa Solutions</span></h2>
+                <p style="color: #CBD5E1; margin-top: 20px; font-size: 1.2rem; max-width: 700px; margin-left: auto; margin-right: auto;">We handle the absolute entirety of your premium villa from the drawing board to your move-in completion.</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="timeline-grid">
+                <!-- Step 1 -->
+                <div class="process-box" data-step="01" data-aos="fade-up" data-aos-delay="0">
+                    <h4><i class="fa-solid fa-compass-drafting"></i> Planning & Arch. Design</h4>
+                    <ul>
+                        <li>Complete site inspection & layout planning</li>
+                        <li>High-fidelity 2D & 3D luxury villa design</li>
+                        <li>Modern & strictly Vastu-compliant planning</li>
+                        <li>Space optimization & total luxury design</li>
+                    </ul>
+                </div>
+                <!-- Step 2 -->
+                <div class="process-box" data-step="02" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fa-solid fa-helmet-safety"></i> Strong Foundation</h4>
+                    <ul>
+                        <li>Extremely deep and heavily durable foundation</li>
+                        <li>Heavy RCC work (thick columns, beams, slabs)</li>
+                        <li>Certified Earthquake-resistant construction</li>
+                        <li>High-strength rigorous structural design</li>
+                    </ul>
+                </div>
+                <!-- Step 3 -->
+                <div class="process-box" data-step="03" data-aos="fade-up" data-aos-delay="200">
+                    <h4><i class="fa-solid fa-trowel-bricks"></i> Premium Construction</h4>
+                    <ul>
+                        <li>High-quality A-grade cement, steel & materials</li>
+                        <li>Highly skilled trained labor & expert supervision</li>
+                        <li>Strict & rigorous quality control at every stage</li>
+                    </ul>
+                </div>
+                <!-- Step 4 -->
+                <div class="process-box" data-step="04" data-aos="fade-up" data-aos-delay="300">
+                    <h4><i class="fa-solid fa-paint-roller"></i> Interior & Exterior Finishes</h4>
+                    <ul>
+                        <li>Exotic Marble, granite & premium designer flooring</li>
+                        <li>Premium wall textures & ultra-luxury paints</li>
+                        <li>European-style modular kitchen & wardrobes</li>
+                        <li>Designer false ceilings & beautiful lighting</li>
+                    </ul>
+                </div>
+                <!-- Step 5 -->
+                <div class="process-box" data-step="05" data-aos="fade-up" data-aos-delay="400">
+                    <h4><i class="fa-solid fa-leaf"></i> Ext. Landscaping (Optional)</h4>
+                    <ul>
+                        <li>Custom garden & lush lawn development</li>
+                        <li>Imposing boundary walls & automated gates</li>
+                        <li>Spacious parking & grand driveway design</li>
+                    </ul>
+                </div>
+                <!-- Step 6 -->
+                <div class="process-box" data-step="06" data-aos="fade-up" data-aos-delay="500">
+                    <h4><i class="fa-solid fa-microchip"></i> Electrical & Smart Features</h4>
+                    <ul>
+                        <li>Advanced, concealed premium electrical systems</li>
+                        <li>High-performance plumbing & water management</li>
+                        <li>Complete Smart Home automations (Optional)</li>
+                    </ul>
+                </div>
+                <!-- Step 7 -->
+                <div class="process-box" style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto; margin-top: 15px;" data-step="07" data-aos="fade-up" data-aos-delay="600">
+                    <h4><i class="fa-solid fa-key"></i> Final Finishing & Handover</h4>
+                    <ul>
+                        <li>Detailed, exhausted luxury inspection</li>
+                        <li>Premium, flawless finishing touches applied</li>
+                        <li>Fully stunning ready-to-move villa delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Build on Your Own Plot -->
+    <section class="own-plot-section">
+        <div class="container">
+            <div class="split-container">
+                <div class="split-content" data-aos="fade-right">
+                    <h5 class="subtitle text-gold">Exclusive Execution</h5>
+                    <h2 class="title" style="color: var(--c-navy); font-size: 3.2rem;">Build on <span class="text-gold">Your Own Plot</span></h2>
+                    <p style="color: #475569; font-size: 1.25rem; margin-top: 25px; line-height: 1.7;">
+                        Have your own scenic land? We provide complete upscale villa construction services. You simply imagine it - we build it into a breathtaking reality.
+                    </p>
+                    
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Custom Luxury:</strong> Bespoke luxury design explicitly crafted for you.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Transparent Pricing:</strong> Clear, flexible budget options and totally transparent cost estimation. No hidden charges.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Project Autopilot:</strong> Full project execution, elite material procurement, and labor management handled entirely.</span></li>
+                    </ul>
+
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--c-navy); margin-top: 50px; margin-bottom: 25px;">Why Choose Our Elite Teams?</h3>
+                    <div class="why-tags">
+                        <span class="why-tag"><i class="fa-solid fa-gem"></i> Luxury Villa Specialists</span>
+                        <span class="why-tag"><i class="fa-solid fa-pen-nib"></i> Modern Architecture</span>
+                        <span class="why-tag"><i class="fa-solid fa-hammer"></i> High-Quality Materials</span>
+                        <span class="why-tag"><i class="fa-solid fa-user-tie"></i> Professional Team</span>
+                        <span class="why-tag"><i class="fa-solid fa-stopwatch"></i> On-Time Delivery</span>
+                    </div>
+                </div>
+                <div class="split-image" data-aos="fade-left">
+                    <img src="assets/matched/img_5bfd4ad9.jpg" alt="Luxury Villa Architecture">
+                    
+                    <!-- Premium Glass Badge Right -->
+                    <div class="glass-badge">
+                        <h3>100%</h3>
+                        <p>Turnkey<br>Opulence</p>
+                    </div>
+
+                    <!-- Investment Info Badge Left -->
+                    <div class="glass-badge-left">
+                        <h4>Living & Investment</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-check text-gold"></i> Personal luxury living</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> Premium holiday homes</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> High rental income (Tourism)</li>
+                            <li><i class="fa-solid fa-check text-gold"></i> Long-term asset value</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Locations Area -->
+            <div class="locations-box" data-aos="zoom-in" data-aos-offset="100">
+                <h2 class="title" style="font-size: 2.5rem; color: var(--c-navy); position: relative; z-index: 1;">Luxury Villa <span class="text-gold">Service Areas</span></h2>
+                <p style="color: #64748B; font-size: 1.15rem; margin-top: 15px; position: relative; z-index: 1;">We provide premium villa construction explicitly across major locations in Uttarakhand and nearby hill areas.</p>
+                <div class="location-tags">
+                    <span><i class="fa-solid fa-street-view" style="color:var(--c-gold); margin-right:8px;"></i> Ramnagar</span>
+                    <span><i class="fa-solid fa-street-view" style="color:var(--c-gold); margin-right:8px;"></i> Kashipur</span>
+                    <span><i class="fa-solid fa-street-view" style="color:var(--c-gold); margin-right:8px;"></i> Rudrapur</span>
+                    <span><i class="fa-solid fa-street-view" style="color:var(--c-gold); margin-right:8px;"></i> Haldwani</span>
+                    <span><i class="fa-solid fa-street-view" style="color:var(--c-gold); margin-right:8px;"></i> Ranikhet</span>
+                    <span><i class="fa-solid fa-street-view" style="color:var(--c-gold); margin-right:8px;"></i> Almora</span>
+                    <span><i class="fa-solid fa-street-view" style="color:var(--c-gold); margin-right:8px;"></i> Pirumadara</span>
+                    <span><i class="fa-solid fa-street-view" style="color:var(--c-gold); margin-right:8px;"></i> Lalkuan</span>
+                    <span><i class="fa-solid fa-street-view" style="color:var(--c-gold); margin-right:8px;"></i> Nanakmatta</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="approach-section">
+        <div class="container text-center" data-aos="fade-up">
+            <h5 class="subtitle text-gold">Our Philosophy</h5>
+            <h2 class="title" style="color: var(--c-navy); margin-bottom: 40px; font-size: 3rem;">Our Core <span class="text-gold">Approach</span></h2>
+            <div class="approach-box">
+                <p style="font-size: 1.35rem; color: var(--c-navy); line-height: 1.9; font-weight: 500;">
+                    We focus on building exquisite villas that seamlessly combine unparalleled structural strength and durability with breathtaking luxury, aesthetics, sheer comfort, and functionality.<br><br>
+                    <strong style="color: var(--c-gold); font-size: 1.5rem; font-family: 'Playfair Display', serif;">We don't just build villas - we carefully create premium living experiences.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powerful Closing Banner -->
+    <section class="cta-footer-banner">
+        <div class="container" data-aos="zoom-in">
+            <h2>"Start Your Villa Project Today."</h2>
+            <p>Planning to build a luxury villa in Uttarakhand? Contact us today and let's turn your vision into incredible reality.</p>
+            <a href="index.html#contact" class="cta-btn-gold">
+                <i class="fa-solid fa-file-signature"></i> Initiate Your Project
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="corporate-footer">
+        <div class="container pt-80 pb-40">
+            <div class="footer-grid">
+                <!-- Branding -->
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo mb-20">
+                        <span class="logo-icon"><i class="fa-solid fa-mountain-sun text-gold"></i></span>
+                        <div class="logo-text">
+                            <span class="brand-name text-white">Uttarakhand</span>
+                    <span class="brand-sub text-gray">Infra Groups</span>
+                        </div>
+                    </a>
+                    <p class="text-gray mb-30">Pioneering excellence in structural development, heavy logistics, and
+                        premium relocation services across the Himalayan region.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Our Firm</a></li>
+                        <li><a href="vision.html">Vision & Mission</a></li>
+                        <li><a href="choose.html">Why Choose Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="house-construction.html">House Construction</a></li>
+                        <li><a href="villa.html" class="active">Villa Construction</a></li>
+                        <li><a href="index.html#services">Movers & Packers</a></li>
+                        <li><a href="index.html#services">Real Estate & Property</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Industry Insights</h4>
+                    <p class="text-gray mb-20">Subscribe to our monthly newsletter for infrastructure updates in Uttarakhand.</p>
+                    <div class="newsletter-pro">
+                        <input type="email" placeholder="Business Email">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom mt-60 pt-20">
+                <p class="text-gray">&copy; 2026 Uttarakhand Infra Groups. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fa-solid fa-robot"></i> Uttarakhand Infra Groups AI
+            </div>
+            <button id="chatbot-close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                Hello! I'm the Uttarakhand Infra Groups AI Assistant. Ask me anything about our construction, transport, or relocation services in any language!
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Type a message..." autocomplete="off">
+            <button id="chatbot-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chatbot-toggle-btn" id="chatbot-toggle-btn">
+        <i class="fa-solid fa-message"></i>
+    </button>
+    <script src="chatbot.js"></script>
+
+</body>
+</html>
+
+
+

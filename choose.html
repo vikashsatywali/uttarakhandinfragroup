@@ -1,0 +1,1038 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us - Uttarakhand Infra Groups</title>
+
+    <!-- Global Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="chatbot.css">
+
+    <style>
+        /* Why Choose Us - Specific Styles */
+        .page-header {
+            position: relative;
+            padding: 200px 0 120px 0;
+            background-color: var(--c-navy);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.9)), url('assets/images/img_63.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+            animation: kenburns 20s infinite alternate ease-in-out;
+        }
+
+        @keyframes kenburns {
+            0% { transform: scale(1); filter: contrast(1); }
+            100% { transform: scale(1.08); filter: contrast(1.1); }
+        }
+
+        .header-content-wrapper {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .header-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid var(--c-gold);
+            color: var(--c-gold);
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            backdrop-filter: blur(5px);
+        }
+
+        .page-title {
+            font-size: 5rem;
+            color: var(--c-white);
+            margin-bottom: 25px;
+            line-height: 1.1;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        @media(max-width: 768px){
+            .page-title { font-size: 3.5rem; }
+        }
+
+        /* Introduction / One Stop Solution */
+        .intro-section {
+            padding: 100px 0;
+            background: var(--c-white);
+            text-align: center;
+            position: relative;
+        }
+
+        .intro-section::after {
+            content: '\f091';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            font-size: 15rem;
+            color: rgba(212, 175, 55, 0.03);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .intro-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .trophy-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .trophy-icon {
+            font-size: 5rem;
+            color: var(--c-gold);
+            filter: drop-shadow(0 15px 25px rgba(212, 175, 55, 0.4));
+            position: relative;
+            z-index: 2;
+        }
+
+        .float-blob {
+            position: absolute;
+            background: rgba(212, 175, 55, 0.15);
+            border-radius: 50%;
+            filter: blur(20px);
+            z-index: 1;
+            animation: floatblob 6s infinite ease-in-out alternate;
+        }
+
+        .blob-1 { width: 150px; height: 150px; top: -50px; left: -50px; }
+        .blob-2 { width: 100px; height: 100px; bottom: -30px; right: -40px; animation-delay: 2s; }
+
+        @keyframes floatblob {
+            0% { transform: translateY(0) scale(1); }
+            100% { transform: translateY(-20px) scale(1.1); }
+        }
+
+        .intro-box {
+            background: #f8fafc;
+            border-left: 5px solid var(--c-gold);
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.06);
+            transform: translateY(20px);
+        }
+
+        /* Stats Decorative Section */
+        .stats-section {
+            padding: 80px 0;
+            background: url('assets/images/img_32.jpg') fixed center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .stats-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10, 25, 47, 0.92);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.4s ease;
+        }
+
+        .stat-card:hover { transform: translateY(-10px); background: rgba(212, 175, 55, 0.05); }
+
+        .stat-card h3 {
+            font-size: 3.5rem;
+            color: var(--c-gold);
+            margin-bottom: 10px;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .stat-card p {
+            color: var(--c-white);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        @media(max-width: 992px){
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .stat-card h3 { font-size: 2.8rem; }
+        }
+        @media(max-width: 768px){
+            .stats-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Expertise Grid (4 Blocks) */
+        .expertise-section {
+            padding: 100px 0;
+            background: #EAF0f8; /* Very light cool grey/blue */
+            position: relative;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .exp-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .exp-card {
+            background: var(--c-white);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+            border-top: 6px solid var(--c-navy);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .exp-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .exp-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+            border-top-color: var(--c-gold);
+        }
+
+        .exp-card:hover::before { opacity: 1; }
+
+        .exp-card i {
+            font-size: 3.5rem;
+            color: var(--c-navy);
+            margin-bottom: 25px;
+            display: inline-block;
+            transition: transform 0.4s ease, color 0.4s ease;
+        }
+
+        .exp-card:hover i {
+            transform: scale(1.1) rotate(5deg);
+            color: var(--c-gold);
+        }
+
+        .exp-card h3 {
+            font-size: 2.2rem;
+            color: var(--c-navy);
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .exp-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .exp-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            color: #475569;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .exp-list li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--c-gold);
+            position: absolute;
+            left: 0;
+            top: 3px;
+            font-size: 1.1rem;
+        }
+
+        .exp-highlight {
+            margin-top: 25px;
+            background: var(--c-navy);
+            color: var(--c-gold);
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            display: inline-block;
+            box-shadow: 0 10px 20px rgba(10, 25, 47, 0.2);
+        }
+
+        @media(max-width: 992px){
+            .exp-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Pillars of Strength (Performance) */
+        .pillars-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #1e293b 0%, var(--c-navy) 100%);
+            color: var(--c-white);
+            position: relative;
+        }
+
+        .pillar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .pillar-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .pillar-box:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-8px);
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .pillar-box i {
+            font-size: 2.8rem;
+            color: var(--c-gold);
+            margin-bottom: 20px;
+        }
+
+        .pillar-box h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--c-white);
+        }
+
+        .pillar-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .pillar-box ul li {
+            color: #CBD5E1;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .pillar-box ul li::before {
+            content: '\e09a';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--c-gold);
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+            top: 5px;
+        }
+
+        .pillar-highlight {
+            display: block;
+            margin-top: 20px;
+            color: var(--c-gold);
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Coverage Marquee Area */
+        .coverage-area {
+            background: #DFE7F0;
+            padding: 60px 0;
+            text-align: center;
+            border-top: 4px solid var(--c-gold);
+        }
+
+        .coverage-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .coverage-tags span {
+            background: var(--c-white);
+            color: var(--c-navy);
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            font-size: 1.1rem;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .coverage-tags span:hover {
+            border-color: var(--c-gold);
+            transform: translateY(-3px);
+            color: var(--c-gold);
+            background: var(--c-navy);
+        }
+
+        /* Difference Split Section */
+        .difference-section {
+            padding: 120px 0;
+            background: var(--c-white);
+        }
+
+        .diff-container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .diff-text { flex: 1; }
+
+        .diff-visual {
+            flex: 1;
+            position: relative;
+        }
+
+        .diff-visual img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+        }
+
+        .diff-badge {
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            background: var(--c-navy);
+            padding: 40px;
+            border-radius: 20px;
+            border-right: 5px solid var(--c-gold);
+            color: var(--c-white);
+            box-shadow: 0 20px 40px rgba(10, 25, 47, 0.3);
+            text-align: center;
+        }
+
+        .diff-badge h3 {
+            font-size: 3.5rem;
+            color: var(--c-gold);
+            font-family: 'Outfit', sans-serif;
+            margin-bottom: 5px;
+            line-height: 1;
+        }
+
+        .diff-badge p {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        @media(max-width: 992px){
+            .diff-container { flex-direction: column; }
+            .diff-badge { left: 20px; bottom: 20px; padding: 25px; }
+            .diff-visual img { height: 400px; }
+        }
+
+        /* Call to Action Banner (Parallax) */
+        .cta-banner {
+            padding: 120px 0;
+            background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.85)), url('assets/images/img_13.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            color: var(--c-white);
+            position: relative;
+            border-top: 2px solid var(--c-gold);
+            border-bottom: 2px solid var(--c-gold);
+        }
+
+        .cta-banner .container { position: relative; z-index: 2; }
+        .cta-banner h2 { font-size: 3.8rem; margin-bottom: 25px; font-weight: 700; font-family: 'Playfair Display', serif; color: var(--c-white); }
+        .cta-banner p { font-size: 1.25rem; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; color: #E2E8F0; font-weight: 300; line-height: 1.8; }
+        .cta-banner .btn-gold {
+            background: var(--c-gold);
+            color: var(--c-navy);
+            padding: 20px 50px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .cta-banner .btn-gold:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+            background: var(--c-white);
+            color: var(--c-navy);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span class="branding-line"><i class="fa-solid fa-truck-fast"></i> Complete Infrastructure & Logistics Solutions</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <span class="support-text"><i class="fa-solid fa-clock"></i> 24/7 Support: +91 98765 43210</span>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Corporate Navbar -->
+    <nav class="navbar premium-navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-mountain-sun"></i></span>
+                <div class="logo-text">
+                    <span class="brand-name">Uttarakhand</span>
+                    <span class="brand-sub">Infra Groups</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="consulation.html" class="active">Company <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="vision.html">Our Vision & Mission</a></li>
+                        <li><a href="choose.html" class="active">Why Choose Us</a></li>
+                    </ul>
+                </li>
+                <li class="mega-menu-item">
+                    <a href="index.html#services">Services <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-city text-gold"></i> Construction & Builders</h3>
+                                <ul>
+                                    <li><a href="house-construction.html"><i class="fa-solid fa-angle-right"></i> House Construction</a></li>
+                                    <li><a href="villa.html"><i class="fa-solid fa-angle-right"></i> Villa Construction</a></li>
+                                    <li><a href="hotel-construction.html"><i class="fa-solid fa-angle-right"></i> Hotel / Resort</a></li>
+                                    <li><a href="shop-com.html"><i class="fa-solid fa-angle-right"></i> Shop & Commercial</a></li>
+                                    <li><a href="trunkey.html"><i class="fa-solid fa-angle-right"></i> Turnkey Projects</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-truck-fast text-gold"></i> Transport & Logistics</h3>
+                                <ul>
+                                    <li><a href="construction-material.html"><i class="fa-solid fa-angle-right"></i> Construction Material</a></li>
+                                    <li><a href="heavy-equipment.html"><i class="fa-solid fa-angle-right"></i> Heavy Equipment</a></li>
+                                    <li><a href="all-uk-goods.html"><i class="fa-solid fa-angle-right"></i> All Uttarakhand Goods</a></li>
+                                    <li><a href="bulk-supply.html"><i class="fa-solid fa-angle-right"></i> Bulk Supply</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-boxes-packing text-gold"></i> Movers & Packers</h3>
+                                <ul>
+                                    <li><a href="home-relocation.html"><i class="fa-solid fa-angle-right"></i> Home Relocation</a></li>
+                                    <li><a href="office-shifting.html"><i class="fa-solid fa-angle-right"></i> Office Shifting</a></li>
+                                    <li><a href="vehicle-transportation.html"><i class="fa-solid fa-angle-right"></i> Vehicle Transportation</a></li>
+                                    <li><a href="warehouse.html"><i class="fa-solid fa-angle-right"></i> Warehouse / Storage</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-house-chimney text-gold"></i> Real Estate</h3>
+                                <ul>
+                                    <li><a href="buy-ready.html"><i class="fa-solid fa-angle-right"></i> Buy Ready House</a></li>
+                                    <li><a href="sell-property.html"><i class="fa-solid fa-angle-right"></i> Sell Property</a></li>
+                                    <li><a href="plot-construction.html"><i class="fa-solid fa-angle-right"></i> Plot Construction</a></li>
+                                    <li><a href="consulation.html"><i class="fa-solid fa-angle-right"></i> Consulting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li class="dropdown">
+                    <a href="index.html#areas">Service Areas <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rudrapur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Rudrapur</a></li>
+                        <li><a href="haldwani.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Haldwani</a></li>
+                        <li><a href="ramnagar.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ramnagar</a></li>
+                        <li><a href="almora.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Almora</a></li>
+                        <li><a href="ranikhet.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ranikhet</a></li>
+                        <li><a href="consulation.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Kathgodam</a></li>
+                        <li style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 5px; padding-top: 5px;">
+                            <a href="index.html#contact" style="color: var(--c-gold) !important;">Enter Custom Location</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta-wrapper" style="display: flex; flex-direction: row; gap: 15px; align-items: center; flex-wrap: nowrap; white-space: nowrap;">
+                <a href="tel:+919456722521" class="btn-call" style="margin-right: 8px; padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); display: inline-flex; align-items: center;"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/919456722521" target="_blank" class="btn-whatsapp" style="padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); color: #25D366; display: inline-flex; align-items: center;"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="buy-ready.html" class="btn-primary" style="background: transparent; color: var(--c-gold); border: 2px solid var(--c-gold); padding: 8px 16px; font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-house-circle-check" style="margin-right: 8px;"></i> Buy Property</a>
+                <a href="sell-property.html" class="btn-primary" style="background: var(--c-gold); color: var(--c-navy); padding: 8px 16px; border: 2px solid var(--c-gold); font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-hand-holding-dollar" style="margin-right: 8px;"></i> Sell Property</a>
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Page Header -->
+    <header class="page-header" id="home">
+        <div class="container header-content-wrapper" data-aos="fade-up">
+            <span class="header-badge"><i class="fa-solid fa-star"></i> Why Choose Us</span>
+            <h1 class="page-title">The Smart Choice for <span class="text-gold">Complete Infrastructure</span></h1>
+            <p style="font-size: 1.4rem; color: #E2E8F0; max-width: 800px; line-height: 1.6;">
+                When it comes to choosing a reliable company for construction, transport, movers & packers, and real estate services in Uttarakhand to All India, you need a partner you can trust. We deliver quality, reliability, and complete solutions under one roof.
+            </p>
+        </div>
+    </header>
+
+    <!-- Intro: One Stop Solution -->
+    <section class="intro-section">
+        <div class="container intro-content" data-aos="zoom-in">
+            <div class="trophy-container">
+                <div class="float-blob blob-1"></div>
+                <div class="float-blob blob-2"></div>
+                <i class="fa-solid fa-trophy trophy-icon"></i>
+            </div>
+            <h2 class="title mb-30" style="font-size: 3rem;">One Company - <span class="text-gold">Complete Solutions</span></h2>
+            <div class="intro-box">
+                <p style="font-size: 1.3rem; color: #334155; margin: 0; line-height: 1.7; font-weight: 500;">
+                    We are not limited to a single service. From Construction & Buildings, to Heavy Logistics, Packers & Movers, and Real Estate-we provide it all. <strong style="color: var(--c-navy);">This makes us your ultimate one-stop solution provider</strong>, saving you time, cost, and immense coordination effort.
+                </p>
+                <div style="margin-top: 25px; display: inline-block; background: rgba(212, 175, 55, 0.1); padding: 8px 16px; border-radius: 50px; color: var(--c-navy); font-weight: 600; font-size: 0.9rem;">
+                    <i class="fa-solid fa-check" style="color: var(--c-gold);"></i> Recognized Excellence in Infrastructure
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand New Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
+                    <h3 class="counter-num" data-target="500">0</h3>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="counter-num" data-target="150">0</h3>
+                    <p>Logistics Fleets</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="counter-num" data-target="20">0</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>100%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Grid -->
+    <section class="expertise-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="subtitle text-gold">Our Mastery</span>
+                <h2 class="title">Unmatched <span class="text-gold">Expertise</span> Across Verticals</h2>
+            </div>
+            
+            <div class="exp-grid">
+                <!-- Box 1 -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    <h3>Strong Expertise in Construction</h3>
+                    <ul class="exp-list">
+                        <li>House construction on your plot</li>
+                        <li>Ready-to-move homes</li>
+                        <li>Villas, hotels, resorts & commercial</li>
+                        <li>Shop and office building</li>
+                        <li>Road construction & infrastructure</li>
+                        <li>Turnkey projects (planning to completion)</li>
+                    </ul>
+                    <div class="exp-highlight">
+                        ðŸ‘‰ We build structures that are strong, modern, and long-lasting.
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-truck-moving"></i>
+                    <h3>Reliable Transport Across India</h3>
+                    <ul class="exp-list">
+                        <li>Transport of construction materials (ret, bajri, cement)</li>
+                        <li>All Uttarakhand goods transport routing</li>
+                        <li>Heavy equipment and bulk logistics</li>
+                        <li>Timely and highly secure delivery pipeline</li>
+                    </ul>
+                    <div class="exp-highlight">
+                        ðŸ‘‰ We ensure your goods reach on time and without damage.
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-box-open"></i>
+                    <h3>Safe Movers & Packers</h3>
+                    <ul class="exp-list">
+                        <li>Home relocation services seamlessly handled</li>
+                        <li>Office shifting and corporate relocation</li>
+                        <li>Vehicle Transportation across India</li>
+                        <li>Packing, loading, unloading & unpacking</li>
+                        <li>Secure storage and warehouse services</li>
+                    </ul>
+                    <div class="exp-highlight">
+                        ðŸ‘‰ Handled with care, safety, and ultimate professionalism.
+                    </div>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                    <h3>Complete Property Support</h3>
+                    <ul class="exp-list">
+                        <li>Buy & sell premium property</li>
+                        <li>Ready houses and residential plots</li>
+                        <li>Contract construction on your plot</li>
+                        <li>Expert property consultation & legal guidance</li>
+                    </ul>
+                    <div class="exp-highlight">
+                        ðŸ‘‰ From land purchase to house construction - we manage everything.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geographic Coverage -->
+    <section class="coverage-area">
+        <div class="container" data-aos="fade-up">
+            <h2 class="title mb-20" style="font-size: 2.8rem;">Strong Presence in <span class="text-gold">Uttarakhand + Pan India</span></h2>
+            <p style="font-size: 1.2rem; color: #475569; max-width: 800px; margin: 0 auto;">
+                Along with a fiercely strong network across all of India, ensuring massive and uninterrupted service coverage nationwide.
+            </p>
+            <div class="coverage-tags">
+                <span>Rudrapur</span>
+                <span>Ramnagar</span>
+                <span>Kashipur</span>
+                <span>Haldwani</span>
+                <span>Kathgodam</span>
+                <span>Nainital</span>
+                <span>Almora</span>
+                <span>Ranikhet</span>
+                <span>Lalkuan</span>
+                <span>Nanakmatta</span>
+                <span style="background: var(--c-navy); color: var(--c-gold);"><i class="fa-solid fa-globe"></i> All India</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pillars of Performance -->
+    <section class="pillars-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="subtitle text-gold">The Core Standard</span>
+                <h2 class="title text-white">Why We Lead the <span class="text-gold">Industry</span></h2>
+            </div>
+
+            <div class="pillar-grid">
+                <div class="pillar-box" data-aos="zoom-in" data-aos-delay="0">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <h4>On-Time Delivery</h4>
+                    <ul>
+                        <li>Timely project completion</li>
+                        <li>Fast transport services</li>
+                        <li>Quick & efficient relocation</li>
+                    </ul>
+                    <span class="pillar-highlight">ðŸ‘‰ We respect deadlines</span>
+                </div>
+
+                <div class="pillar-box" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <h4>Transparent Pricing</h4>
+                    <ul>
+                        <li>Clear & honest pricing</li>
+                        <li>Zero hidden charges</li>
+                        <li>Budget-friendly packages</li>
+                    </ul>
+                    <span class="pillar-highlight">ðŸ‘‰ Premium service at competitive rates</span>
+                </div>
+
+                <div class="pillar-box" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h4>Skilled Professional Team</h4>
+                    <ul>
+                        <li>Expert civil engineers</li>
+                        <li>Skilled logistics drivers</li>
+                        <li>Trained packing staff</li>
+                    </ul>
+                    <span class="pillar-highlight">ðŸ‘‰ Expertise & precision</span>
+                </div>
+
+                <div class="pillar-box" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h4>Safety & Quality</h4>
+                    <ul>
+                        <li>High-quality materials</li>
+                        <li>Safe handling of goods</li>
+                        <li>Regular quality checks</li>
+                    </ul>
+                    <span class="pillar-highlight">ðŸ‘‰ Completely secure & protected</span>
+                </div>
+
+                <div class="pillar-box" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <h4>Customer-Centric</h4>
+                    <ul>
+                        <li>Personalized solutions</li>
+                        <li>Rapid response & support</li>
+                        <li>100% satisfaction focus</li>
+                    </ul>
+                    <span class="pillar-highlight">ðŸ‘‰ Your trust is our achievement</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Difference & Growth -->
+    <section class="difference-section">
+        <div class="container">
+            <div class="diff-container">
+                <div class="diff-text" data-aos="fade-right">
+                    <span class="subtitle text-gold mb-10" style="display:block">The X-Factor</span>
+                    <h2 class="title mb-30" style="font-size: 3rem;">What Makes Us <span class="text-gold">Different?</span></h2>
+                    <p style="font-size: 1.2rem; color: #475569; line-height: 1.8; margin-bottom: 25px;">
+                        Unlike others, we offer <strong>complete infrastructure + logistics + real estate services</strong> in one single entity.<br><br>
+                        ðŸ‘‰ This makes us a highly unique and incredibly powerful service provider across Uttarakhand and India.
+                    </p>
+                    
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--c-navy); margin-top: 50px; margin-bottom: 20px;">Growing Network & Expanding Services</h3>
+                    <ul class="exp-list" style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid var(--c-gold);">
+                        <li>Increasing service areas actively across India</li>
+                        <li>Strengthening integrated transport matrices</li>
+                        <li>Improving construction with next-gen modern techniques</li>
+                        <li>Constantly enhancing customer service protocol</li>
+                    </ul>
+                </div>
+                <div class="diff-visual" data-aos="fade-left">
+                    <img src="assets/matched/img_6fbe8827.jpg" alt="Industrial Growth">
+                    <div class="diff-badge">
+                        <h3>#1</h3>
+                        <p>Integrated<br>Ecosystem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultra Premium CTA Banner -->
+    <section class="cta-banner">
+        <div class="container" data-aos="zoom-in">
+            <h2>Choose Quality. Choose Reliability. Choose Us.</h2>
+            <p>If you are looking for a trusted heavy-weight company for construction, transport, or relocation services, we are fully prepared to execute.</p>
+            <p style="font-weight: 700; color: var(--c-gold); font-size: 1.4rem; margin-top: -20px; margin-bottom: 40px;">We don't just provide services - we deliver trust, quality, and long-term value.</p>
+            <a href="index.html#contact" class="btn-gold">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="corporate-footer" style="padding-top: 80px;">
+        <div class="container pb-40">
+            <div class="footer-grid">
+                <!-- Branding -->
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo mb-20">
+                        <span class="logo-icon"><i class="fa-solid fa-mountain-sun text-gold"></i></span>
+                        <div class="logo-text">
+                            <span class="brand-name text-white">Uttarakhand</span>
+                    <span class="brand-sub text-gray">Infra Groups</span>
+                        </div>
+                    </a>
+                    <p class="text-gray mb-30">Pioneering excellence in structural development, heavy logistics, and premium relocation services across the Himalayan region to all over India.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Our Journey</a></li>
+                        <li><a href="vision.html">Vision & Mission</a></li>
+                        <li><a href="choose.html" class="active">Why Choose Us</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Ecosystem</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Construction</a></li>
+                        <li><a href="index.html#services">Logistics & Transit</a></li>
+                        <li><a href="index.html#services">Relocations</a></li>
+                        <li><a href="index.html#services">Real Estate</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Reach Out</h4>
+                    <p class="text-gray mb-20">Have a project in mind? Let's discuss your requirements today.</p>
+                    <a href="index.html#contact" class="btn-primary" style="padding: 8px 16px;">Get a Quote</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom mt-60 pt-20">
+                <p class="text-gray">&copy; 2026 Uttarakhand Infra Groups. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fa-solid fa-robot"></i> Uttarakhand Infra Groups AI
+            </div>
+            <button id="chatbot-close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                Hello! I'm the Uttarakhand Infra Groups AI Assistant. Ask me anything about our construction, transport, or relocation services in any language! &nbsp; (à¤¨à¤®à¤¸à¥à¤¤à¥‡! à¤®à¥ˆà¤‚ à¤¦à¥‡à¤µà¤­à¥‚à¤®à¤¿ à¤à¤†à¤ˆ à¤…à¤¸à¤¿à¤¸à¥à¤Ÿà¥‡à¤‚à¤Ÿ à¤¹à¥‚à¤à¥¤ à¤†à¤ª à¤®à¥à¤à¤¸à¥‡ à¤•à¤¿à¤¸à¥€ à¤­à¥€ à¤­à¤¾à¤·à¤¾ à¤®à¥‡à¤‚ à¤ªà¥‚à¤› à¤¸à¤•à¤¤à¥‡ à¤¹à¥ˆà¤‚!)
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Type a message..." autocomplete="off">
+            <button id="chatbot-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chatbot-toggle-btn" id="chatbot-toggle-btn">
+        <i class="fa-solid fa-message"></i>
+    </button>
+    <script src="chatbot.js"></script>
+    <script>
+        // Init AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+
+        // Simple Counter Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.counter-num');
+            const speed = 100;
+            
+            const animateCounters = () => {
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        const inc = target / speed;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + inc);
+                            setTimeout(updateCount, 20);
+                        } else {
+                            counter.innerText = target + "+";
+                        }
+                    };
+                    updateCount();
+                });
+            };
+
+            // Intersection Observer to trigger when visible
+            const observer = new IntersectionObserver((entries) => {
+                if(entries[0].isIntersecting){
+                    animateCounters();
+                    observer.disconnect();
+                }
+            }, { threshold: 0.5 });
+            
+            if (document.querySelector('.stats-section')) {
+                observer.observe(document.querySelector('.stats-section'));
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+

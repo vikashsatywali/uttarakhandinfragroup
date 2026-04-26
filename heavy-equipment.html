@@ -1,0 +1,713 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rent or hire heavy construction equipment and machinery in Uttarakhand. Excavators, Cranes, JCBs, and Dumpers available for infrastructure projects.">
+    <title>Heavy Equipment & Machinery Rental | Uttarakhand Infra Groups</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,600&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+
+    <style>
+        /* Modern Heavy Machinery Decorations */
+        :root {
+            --brand-main: #eab308; /* CAT Yellow */
+            --brand-dark: #171717; /* Carbon Black */
+        }
+
+        .page-header {
+            position: relative;
+            padding: 160px 0 80px 0;
+            background: linear-gradient(135deg, rgba(23, 23, 23, 0.9) 0%, rgba(23, 23, 23, 0.75) 100%), url('assets/images/img_55.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .page-header::after {
+            content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 12px;
+            background: repeating-linear-gradient(45deg, var(--brand-main), var(--brand-main) 10px, #000 10px, #000 20px);
+            z-index: 3;
+        }
+
+        .header-floating-shapes { display: none; }
+
+        .header-content-wrapper {
+            position: relative;
+            z-index: 2;
+            max-width: 950px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .header-badge {
+            display: inline-block;
+            background: rgba(234, 179, 8, 0.15);
+            border: 2px solid var(--brand-main);
+            color: var(--brand-main);
+            padding: 12px 35px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            box-shadow: 4px 4px 0px rgba(234, 179, 8, 0.3);
+            transform: skewX(-10deg);
+            animation: none;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-badge i, .header-badge span { transform: skewX(10deg); display: inline-block; }
+
+        .page-title {
+            font-size: 4rem;
+            color: #ffffff;
+            margin-bottom: 25px;
+            line-height: 1.1;
+            font-family: 'Inter', sans-serif;
+            font-weight: 900;
+            text-shadow: 0px 4px 10px rgba(0,0,0,0.8);
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+
+        .page-desc {
+            font-size: 1.35rem;
+            color: #d4d4d8;
+            line-height: 1.7;
+            margin: 0 auto 40px auto;
+            max-width: 800px;
+            text-shadow: 1px 2px 5px rgba(0,0,0,0.8);
+            font-weight: 500;
+        }
+
+        .btn-glow {
+            background: var(--brand-main) !important;
+            color: #000 !important;
+            border: none;
+            box-shadow: 0 10px 25px rgba(234, 179, 8, 0.4) !important;
+            border-radius: 4px !important;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 1px;
+            padding: 15px 40px;
+        }
+        .btn-glow:hover { background: #ca8a04 !important; transform: translateY(-3px); }
+
+        .intro-container {
+            padding: 120px 0;
+            background: #fafafa;
+            background-image: linear-gradient(rgba(23, 23, 23, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(23, 23, 23, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            text-align: center;
+        }
+
+        .highlight-box {
+            background: #ffffff;
+            border-left: 8px solid var(--brand-main);
+            padding: 30px 40px;
+            margin: 40px auto;
+            max-width: 900px;
+            font-weight: 700;
+            color: var(--brand-dark);
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .solutions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 60px; }
+
+        .solution-card {
+            background: #ffffff;
+            border: 2px solid #e4e4e7;
+            padding: 45px 35px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-align: left;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .solution-card::after {
+            content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 4px;
+            background: var(--brand-main); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease;
+        }
+        .solution-card:hover::after { transform: scaleX(1); }
+        .solution-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); border-color: rgba(234, 179, 8, 0.5); }
+
+        .solution-card i { font-size: 3.5rem; color: var(--brand-main); margin-bottom: 25px; display: inline-block; transition: transform 0.3s ease; text-shadow: 2px 2px 0px #000; }
+        .solution-card:hover i { transform: scale(1.1); }
+        .solution-card h3 { font-size: 1.6rem; color: var(--brand-dark); margin-bottom: 15px; font-family: 'Inter', sans-serif; font-weight: 900; text-transform: uppercase; }
+
+        .process-section {
+            padding: 120px 0;
+            background: #171717;
+            color: #ffffff;
+            border-top: 5px solid var(--brand-main);
+        }
+
+        .timeline-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 60px; }
+
+        .process-box {
+            background: #27272a;
+            border-bottom: 4px solid var(--brand-main);
+            padding: 40px 30px;
+            border-radius: 6px;
+            position: relative;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .process-box::before {
+            content: attr(data-step);
+            font-size: 4rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.03);
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            line-height: 1;
+            z-index: -1;
+        }
+
+        .process-box:hover { background: #3f3f46; transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.5); }
+        .process-box h4 { font-size: 1.4rem; color: #ffffff; margin-bottom: 20px; display: flex; align-items: center; gap: 15px; font-family: 'Inter', sans-serif; font-weight: 800; text-transform: uppercase; }
+        .process-box h4 i { color: var(--brand-main); font-size: 1.8rem; background: transparent; padding: 0; }
+        .process-box ul { list-style: none; padding: 0; margin: 0; }
+        .process-box ul li { padding-left: 25px; position: relative; margin-bottom: 12px; color: #a1a1aa; font-size: 1.05rem; line-height: 1.5; font-weight: 500; transition: color 0.3s ease; }
+        .process-box:hover ul li { color: #f4f4f5; }
+        .process-box ul li::before { content: '\f0da'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; left: 0; top: 2px; color: var(--brand-main); font-size: 1.1rem; }
+
+        .own-plot-section { padding: 120px 0; background: #ffffff; }
+        .split-container { display: flex; align-items: center; gap: 60px; }
+        .split-image { flex: 1; position: relative; }
+        .split-image img { width: 100%; border-radius: 8px; box-shadow: 15px 15px 0px var(--brand-main); transition: transform 0.5s ease; }
+        .split-image:hover img { transform: scale(1.02); }
+        
+        .glass-badge {
+            position: absolute; bottom: -20px; right: -20px;
+            background: var(--brand-dark); color: #fff; padding: 30px;
+            border: 4px solid var(--brand-main); box-shadow: 0 20px 40px rgba(0,0,0,0.3); text-align: center;
+        }
+        .glass-badge h3 { font-size: 2.5rem; color: var(--brand-main); font-family: 'Inter', sans-serif; font-weight: 900; margin-bottom: 5px; line-height: 1; }
+        .glass-badge p { font-size: 0.95rem; text-transform: uppercase; font-weight: 800; letter-spacing: 2px; margin: 0; color: #d4d4d8; }
+
+        .split-content { flex: 1; }
+        .check-list { margin-top: 35px; }
+        .check-list li { font-size: 1.15rem; color: var(--brand-dark); margin-bottom: 18px; display: flex; align-items: flex-start; gap: 15px; font-weight: 600; line-height: 1.6; }
+        .check-list li i { color: var(--brand-main); font-size: 1.4rem; margin-top: 2px; }
+
+        .why-tags { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px; }
+        .why-tag {
+            background: #f4f4f5; border: 2px solid transparent; padding: 8px 16px;
+            border-radius: 4px; font-weight: 800; font-size: 0.95rem; color: var(--brand-dark);
+            transition: all 0.3s ease; display: flex; align-items: center; gap: 5px; text-transform: uppercase;
+        }
+        .why-tag i { color: var(--brand-main); font-size: 1.1rem; transition: transform 0.3s ease; text-shadow: 1px 1px 0px #000; }
+        .why-tag:hover { border-color: var(--brand-main); background: #fff; transform: translateY(-3px); box-shadow: 4px 4px 0px rgba(234, 179, 8, 0.2); }
+        .why-tag:hover i { transform: scale(1.2); }
+
+
+        .locations-box {
+            background: #171717; padding: 70px; border-radius: 8px; text-align: center; margin-top: 80px; position: relative; border-bottom: 6px solid var(--brand-main);
+            overflow: hidden;
+        }
+        .locations-box::before {
+            content:''; position:absolute; top:0; left:0; width:100%; height:100%;
+            background-image: radial-gradient(rgba(255,255,255,0.05) 2px, transparent 2px); background-size: 30px 30px; z-index: 0;
+        }
+        .location-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 40px; position: relative; z-index: 1;}
+        .location-tags span {
+            background: rgba(255, 255, 255, 0.05); color: #fff; padding: 12px 30px; border-radius: 4px;
+            font-weight: 800; font-size: 1.1rem; border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease; cursor: default;
+        }
+        .location-tags span:hover { background: var(--brand-main); color: #000; border-color: var(--brand-main); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+
+        .approach-section { padding: 100px 0; background: #fafafa; border-top: 1px solid #e4e4e7;}
+        .approach-box { background: #ffffff; padding: 50px; border-radius: 8px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); max-width: 900px; margin: 0 auto; position: relative; border-left: 8px solid var(--brand-main); }
+        .approach-box::before { display: none; }
+
+        .cta-footer-banner {
+            background: var(--brand-main) url('assets/images/img_42.jpg') center/cover fixed;
+            padding: 100px 0; text-align: center; position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-footer-banner::before { content: ''; position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(23, 23, 23, 0.9); z-index: 0; }
+        .cta-footer-banner::after {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 10px;
+            background: repeating-linear-gradient(45deg, var(--brand-main), var(--brand-main) 10px, #000 10px, #000 20px);
+            z-index: 3;
+        }
+
+        .cta-footer-banner .container { position: relative; z-index: 1; }
+        .cta-footer-banner h2 { font-family: 'Inter', sans-serif; font-size: 3.5rem; font-weight: 900; color: #ffffff; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px; text-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .cta-footer-banner p { font-size: 1.35rem; color: #d4d4d8; font-weight: 500; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; }
+
+        .cta-btn-gold {
+            background: var(--brand-main); color: #000; padding: 18px 45px; border-radius: 4px;
+            font-size: 1.25rem; font-weight: 900; display: inline-flex; align-items: center; gap: 12px;
+            transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .cta-btn-gold:hover { transform: translateY(-5px); background: #ca8a04; box-shadow: 0 20px 40px rgba(0,0,0,0.3); color: #000; }
+
+        @media(max-width: 992px) { .split-container { flex-direction: column; } .page-title { font-size: 4rem; } }
+        @media(max-width: 768px) { .page-title { font-size: 3rem; } .locations-box { padding: 40px 20px; } .glass-badge { right: 20px; bottom: -20px; padding: 20px; } .glass-badge h3 { font-size: 2rem; } .page-header { padding: 120px 0 60px 0; } }
+
+        /* Overrides to match new theme inline text colors */
+        .text-gold { color: var(--brand-main) !important; }
+        h5.subtitle.text-gold, .text-gold.mb-10 { color: var(--brand-main) !important; letter-spacing: 3px; font-family: 'Inter', sans-serif; font-weight: 900; }
+        .intro-text p { color: var(--brand-dark); }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span class="branding-line"><i class="fa-solid fa-truck-fast"></i> Complete Infrastructure & Logistics Solutions - Uttarakhand to All India</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <span class="support-text"><i class="fa-solid fa-clock"></i> 24/7 Support</span>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Corporate Navbar -->
+    <nav class="navbar premium-navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-mountain-sun"></i></span>
+                <div class="logo-text">
+                    <span class="brand-name">Uttarakhand</span>
+                    <span class="brand-sub">Infra Groups</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">Company <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="vision.html">Our Vision & Mission</a></li>
+                        <li><a href="choose.html">Why Choose Us</a></li>
+                    </ul>
+                </li>
+                <li class="mega-menu-item">
+                    <a href="index.html#services" class="active">Services <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-city text-gold"></i> Construction & Builders</h3>
+                                <ul>
+                                    <li><a href="house-construction.html"><i class="fa-solid fa-angle-right"></i> House Construction</a></li>
+                                    <li><a href="villa.html"><i class="fa-solid fa-angle-right"></i> Villa Construction</a></li>
+                                    <li><a href="hotel-construction.html"><i class="fa-solid fa-angle-right"></i> Hotel / Resort</a></li>
+                                    <li><a href="shop-com.html"><i class="fa-solid fa-angle-right"></i> Shop & Commercial</a></li>
+                                    <li><a href="trunkey.html"><i class="fa-solid fa-angle-right"></i> Turnkey Projects</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-truck-fast text-gold"></i> Transport & Logistics</h3>
+                                <ul>
+                                    <li><a href="construction-material.html"><i class="fa-solid fa-angle-right"></i> Construction Material</a></li>
+                                    <li><a href="heavy-equipment.html" class="active"><i class="fa-solid fa-angle-right"></i> Heavy Equipment</a></li>
+                                    <li><a href="all-uk-goods.html"><i class="fa-solid fa-angle-right"></i> All Uttarakhand Goods</a></li>
+                                    <li><a href="bulk-supply.html"><i class="fa-solid fa-angle-right"></i> Bulk Supply</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-boxes-packing text-gold"></i> Movers & Packers</h3>
+                                <ul>
+                                    <li><a href="home-relocation.html"><i class="fa-solid fa-angle-right"></i> Home Relocation</a></li>
+                                    <li><a href="office-shifting.html"><i class="fa-solid fa-angle-right"></i> Office Shifting</a></li>
+                                    <li><a href="vehicle-transportation.html"><i class="fa-solid fa-angle-right"></i> Vehicle Transportation</a></li>
+                                    <li><a href="warehouse.html"><i class="fa-solid fa-angle-right"></i> Warehouse / Storage</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-house-chimney text-gold"></i> Real Estate</h3>
+                                <ul>
+                                    <li><a href="buy-ready.html"><i class="fa-solid fa-angle-right"></i> Buy Ready House</a></li>
+                                    <li><a href="sell-property.html"><i class="fa-solid fa-angle-right"></i> Sell Property</a></li>
+                                    <li><a href="plot-construction.html"><i class="fa-solid fa-angle-right"></i> Plot Construction</a></li>
+                                    <li><a href="consulation.html"><i class="fa-solid fa-angle-right"></i> Consulting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li class="dropdown">
+                    <a href="index.html#areas">Service Areas <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rudrapur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Rudrapur</a></li>
+                        <li><a href="haldwani.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Haldwani</a></li>
+                        <li><a href="ramnagar.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ramnagar</a></li>
+                        <li><a href="almora.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Almora</a></li>
+                        <li><a href="ranikhet.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ranikhet</a></li>
+                        <li><a href="kashipur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Kashipur</a></li>
+                        <li style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 5px; padding-top: 5px;">
+                            <a href="index.html#quote" style="color: var(--c-gold) !important;"><i class="fa-solid fa-map-location-dot" style="margin-right: 8px;"></i>Enter Custom Location</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta-wrapper" style="display: flex; flex-direction: row; gap: 15px; align-items: center; flex-wrap: nowrap; white-space: nowrap;">
+                <a href="tel:+919456722521" class="btn-call" style="margin-right: 8px; padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); display: inline-flex; align-items: center;"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/919456722521" target="_blank" class="btn-whatsapp" style="padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); color: #25D366; display: inline-flex; align-items: center;"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="buy-ready.html" class="btn-primary" style="background: transparent; color: var(--c-gold); border: 2px solid var(--c-gold); padding: 8px 16px; font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-house-circle-check" style="margin-right: 8px;"></i> Buy Property</a>
+                <a href="sell-property.html" class="btn-primary" style="background: var(--c-gold); color: var(--c-navy); padding: 8px 16px; border: 2px solid var(--c-gold); font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-hand-holding-dollar" style="margin-right: 8px;"></i> Sell Property</a>
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" id="home">
+        <!-- Floating Animated Blobs -->
+        <div class="header-floating-shapes">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
+
+        <div class="container header-content-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+            <span class="header-badge"><span><i class="fa-solid fa-helmet-safety" style="margin-right:8px;"></i> Heavy Duty Machinery</span></span>
+            <h1 class="page-title">Equipment Rental & Supply</h1>
+            <p class="page-desc">
+                Deploy powerful heavy machinery for your infrastructure projects. We provide modern, highly-maintained excavators, cranes, dumpers, and mixers on flexible rental agreements across Uttarakhand.
+            </p>
+            <a href="index.html#contact" class="btn-primary btn-large btn-glow"><i class="fa-solid fa-truck-medical" style="margin-right:8px;"></i> Request Equipment Now</a>
+        </div>
+    </header>
+
+    <!-- Intro / What We Do -->
+    <section class="intro-container">
+        <div class="container" data-aos="fade-up">
+            <h5 class="subtitle text-gold mb-10" style="letter-spacing:3px;">FLEET DEPLOYMENT</h5>
+            <h2 class="title" style="color: var(--brand-dark); margin-bottom: 25px;">Power Your <span class="text-gold">Infrastructure</span></h2>
+            
+            <div class="intro-text">
+                <p>Purchasing heavy machinery is often financially inviable for individual projects. Maintaining and storing massive machines eats heavily into your profit margins and operational time.</p>
+                <p>Uttarakhand Infra Groups Logistics offers an on-demand, highly specialized heavy machinery rental service. With expert certified operators provided, we bring sheer mechanical power exactly where and when you need it.</p>
+            </div>
+
+            <div class="highlight-box" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-road-barrier fa-beat" style="font-size: 1.8rem; color: var(--brand-main); text-shadow: 1px 1px 0px #000;"></i>
+                <div style="text-align: left;">
+                    From massive earthmoving for deep mountain foundations to high-reach cranes lifting pre-cast columns, our perfectly serviced equipment guarantees zero breakdown delays.
+                </div>
+            </div>
+
+            <!-- Specializations Grid -->
+            <div class="solutions-grid">
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fa-solid fa-tractor"></i>
+                    <h3>Earthmovers & JCBs</h3>
+                    <p class="text-gray">Heavy-duty Backhoe Loaders and powerful excavators for quick trenching, massive levelling, road clearing, and deep foundation digging.</p>
+                </div>
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-truck-pickup"></i>
+                    <h3>Hydraulic Dumpers</h3>
+                    <p class="text-gray">Massive payload tipper trucks capable of hauling thousands of tons of gravel, excavated soil, and demolition debris rapidly away from your site.</p>
+                </div>
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-truck-ramp-box"></i>
+                    <h3>Mobile Cranes</h3>
+                    <p class="text-gray">High-reach hydraulic telescopic cranes for securely lifting extremely heavy steel beams, industrial machinery, and pre-cast concrete blocks.</p>
+                </div>
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-truck-droplet"></i>
+                    <h3>Transit Mixers (RMC)</h3>
+                    <p class="text-gray">Rotary drum transit mixers ensuring continuous, uninterrupted pouring of high-grade ready-mix concrete for massive commercial floor slabs.</p>
+                </div>
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <h3>Road Rollers & Compactors</h3>
+                    <p class="text-gray">Vibratory soil compactors and tandem rollers essential for achieving perfect ground density before pouring foundations or laying asphalt roads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End-to-End Timeline -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header center light" data-aos="fade-up">
+                <span class="subtitle text-gold">Operational Workflow</span>
+                <h2 class="title text-white">How Our <span class="text-gold">Rental Works</span></h2>
+                <p style="color: #a1a1aa; margin-top: 20px; font-size: 1.2rem; max-width: 700px; margin-left: auto; margin-right: auto;">Our heavy equipment dispatch system is entirely seamless and built for industrial speed.</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="timeline-grid">
+                <!-- Step 1 -->
+                <div class="process-box" data-step="01" data-aos="fade-up" data-aos-delay="0">
+                    <h4><i class="fa-solid fa-clipboard-list"></i> Project Assessment</h4>
+                    <ul>
+                        <li>Analyzing exact soil, terrain, and structural requirements</li>
+                        <li>Determining the correct payload capacity required</li>
+                        <li>Generating highly competitive rental pricing agreements</li>
+                    </ul>
+                </div>
+                <!-- Step 2 -->
+                <div class="process-box" data-step="02" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fa-solid fa-screwdriver-wrench"></i> Pre-Dispatch Check</h4>
+                    <ul>
+                        <li>Furious inspection of engine power and hydraulic oil systems</li>
+                        <li>Verifying tires, tracks, and structural integrity</li>
+                        <li>Ensuring absolute safety compliance before leaving the yard</li>
+                    </ul>
+                </div>
+                <!-- Step 3 -->
+                <div class="process-box" data-step="03" data-aos="fade-up" data-aos-delay="200">
+                    <h4><i class="fa-solid fa-map-location-dot"></i> Heavy Delivery</h4>
+                    <ul>
+                        <li>Using massive flatbed trailers to transport equipment to your site</li>
+                        <li>Safe unloading techniques by veteran heavy drivers</li>
+                        <li>Navigating through incredibly tight mountain and urban terrains</li>
+                    </ul>
+                </div>
+                <!-- Step 4 -->
+                <div class="process-box" data-step="04" data-aos="fade-up" data-aos-delay="300">
+                    <h4><i class="fa-solid fa-users-gear"></i> Expert Operation</h4>
+                    <ul>
+                        <li>Deploying highly certified, deeply experienced machine operators</li>
+                        <li>Strict adherence to industrial site safety parameters</li>
+                        <li>Maximum efficiency logic to save your daily rental hours</li>
+                    </ul>
+                </div>
+                <!-- Step 5 -->
+                <div class="process-box" data-step="05" data-aos="fade-up" data-aos-delay="400">
+                    <h4><i class="fa-solid fa-toolbox"></i> On-Site Support</h4>
+                    <ul>
+                        <li>Zero-downtime policy with instant field-mechanic dispatch</li>
+                        <li>Quick routine refueling and greasing managed by our teams</li>
+                        <li>Immediate machine replacement in case of severe technical failures</li>
+                    </ul>
+                </div>
+                <!-- Step 6 -->
+                <div class="process-box" data-step="06" data-aos="fade-up" data-aos-delay="500">
+                    <h4><i class="fa-solid fa-truck-ramp-box"></i> Seamless Extraction</h4>
+                    <ul>
+                        <li>Quick recovery of the equipment once the milestone is achieved</li>
+                        <li>Final hour-meter and payload bill settlement</li>
+                        <li>Ready to rapidly re-deploy for your next construction phase</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Own Plot Section / Why Choose us -->
+    <section class="own-plot-section">
+        <div class="container">
+            <div class="split-container">
+                <div class="split-content" data-aos="fade-right">
+                    <h5 class="subtitle text-gold">Mechanical Dominance</h5>
+                    <h2 class="title" style="color: var(--brand-dark); font-size: 3.2rem;">The Uttarakhand Infra Groups <span class="text-gold">Advantage</span></h2>
+                    <p style="color: #52525b; font-size: 1.25rem; margin-top: 25px; line-height: 1.7;">
+                        We don't just rent out machines; we supply extreme mechanical reliability. A broken excavator can halt an entire project's progress. That's why our fleet consists of modern, rigorously serviced assets.
+                    </p>
+                    
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Certified Operators:</strong> Our drivers act like precision artists, moving tons of earth with absolute accuracy.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Modern Fleet:</strong> We constantly upgrade our assets, retiring old machines to prevent mid-job breakdowns.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Flexible Terms:</strong> Hire precisely on hourly, daily, deeply discounted weekly, or long-term monthly bases.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Total Fuel Management:</strong> Wet or Dry lease options. Let us handle the complex fuel logistics if you prefer.</span></li>
+                    </ul>
+
+                    <h3 style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: 2rem; color: var(--brand-dark); margin-top: 50px; margin-bottom: 25px;">Why Trust Our Machinery</h3>
+                    <div class="why-tags">
+                        <span class="why-tag"><i class="fa-solid fa-shield-halved"></i> Zero Breakdown</span>
+                        <span class="why-tag"><i class="fa-solid fa-gas-pump"></i> Fuel Efficient</span>
+                        <span class="why-tag"><i class="fa-solid fa-helmet-safety"></i> Insured Operators</span>
+                        <span class="why-tag"><i class="fa-solid fa-gears"></i> Highly Maintained</span>
+                    </div>
+                </div>
+                <div class="split-image" data-aos="fade-left">
+                    <img src="assets/matched/img_522021ba.jpg" alt="Heavy Yellow Construction Excavator">
+                    <!-- Premium Glass Badge -->
+                    <div class="glass-badge">
+                        <h3>100+</h3>
+                        <p>Modern<br>Machines</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Locations Area -->
+            <div class="locations-box" data-aos="zoom-in" data-aos-offset="100">
+                <h2 class="title" style="font-size: 2.5rem; color: #ffffff; position: relative; z-index: 1;">Machinery <span class="text-gold">Deployment Zones</span></h2>
+                <p style="color: #a1a1aa; font-size: 1.15rem; margin-top: 15px; position: relative; z-index: 1;">We rapidly dispatch heavy equipment across major commercial districts of Uttarakhand.</p>
+                <div class="location-tags">
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--brand-main); margin-right:8px; text-shadow:1px 1px 0px #000;"></i> Haldwani</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--brand-main); margin-right:8px; text-shadow:1px 1px 0px #000;"></i> Rudrapur</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--brand-main); margin-right:8px; text-shadow:1px 1px 0px #000;"></i> Kashipur</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--brand-main); margin-right:8px; text-shadow:1px 1px 0px #000;"></i> Ramnagar</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--brand-main); margin-right:8px; text-shadow:1px 1px 0px #000;"></i> Dehradun</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--brand-main); margin-right:8px; text-shadow:1px 1px 0px #000;"></i> Almora</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--brand-main); margin-right:8px; text-shadow:1px 1px 0px #000;"></i> Pithoragarh</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="approach-section">
+        <div class="container text-center" data-aos="fade-up">
+            <h5 class="subtitle text-gold">Our Philosophy</h5>
+            <h2 class="title" style="color: var(--brand-dark); margin-bottom: 40px; font-size: 3rem;">Muscle For <span class="text-gold">Your Vision</span></h2>
+            <div class="approach-box">
+                <p style="font-size: 1.35rem; color: var(--brand-dark); line-height: 1.9; font-weight: 500;">
+                    Constructing massive infrastructure requires immense physical force. By equipping your site with perfectly calibrated heavy tools, we save you hundreds of manual labor hours and exponentially increase your project speed.<br><br>
+                    <strong style="color: var(--brand-main); font-size: 1.5rem; font-family: 'Inter', sans-serif; font-weight:900; text-shadow:1px 1px 0px #000;">Heavy lifting requires serious partnerships, and we deliver power on demand.</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powerful Closing Banner -->
+    <section class="cta-footer-banner">
+        <div class="container" data-aos="zoom-in">
+            <h2>"Industrial Power Delivered Straight To Your Build Site."</h2>
+            <p>Don't let mechanical delays ruin your timeline. Hire top-tier maintained heavy equipment from us today.</p>
+            <a href="index.html#contact" class="cta-btn-gold">
+                <i class="fa-solid fa-tractor"></i> Rent Heavy Equipment
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="corporate-footer">
+        <div class="container pt-80 pb-40">
+            <div class="footer-grid">
+                <!-- Branding -->
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo mb-20">
+                        <span class="logo-icon"><i class="fa-solid fa-mountain-sun text-gold" style="color:#d4af37 !important;"></i></span>
+                        <div class="logo-text">
+                            <span class="brand-name text-white">Uttarakhand</span>
+                    <span class="brand-sub text-gray">Infra Groups</span>
+                        </div>
+                    </a>
+                    <p class="text-gray mb-30">Pioneering excellence in structural development, heavy logistics, and premium relocation services across the Himalayan region.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Our Firm</a></li>
+                        <li><a href="vision.html">Vision & Mission</a></li>
+                        <li><a href="choose.html">Why Choose Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="house-construction.html">House Construction</a></li>
+                        <li><a href="heavy-equipment.html" class="active">Heavy Transit & Logistics</a></li>
+                        <li><a href="index.html#services">Movers & Packers</a></li>
+                        <li><a href="index.html#services">Real Estate & Property</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Industry Insights</h4>
+                    <p class="text-gray mb-20">Subscribe to our monthly newsletter for infrastructure updates in Uttarakhand.</p>
+                    <div class="newsletter-pro">
+                        <input type="email" placeholder="Business Email">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom mt-60 pt-20">
+                <p class="text-gray">&copy; 2026 Uttarakhand Infra Groups. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fa-solid fa-robot"></i> Uttarakhand Infra Groups AI
+            </div>
+            <button id="chatbot-close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                Hello! I'm the Uttarakhand Infra Groups AI Assistant. Ask me anything about our construction, transport, or relocation services in any language!
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Type a message..." autocomplete="off">
+            <button id="chatbot-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chatbot-toggle-btn" id="chatbot-toggle-btn">
+        <i class="fa-solid fa-message"></i>
+    </button>
+    <script src="chatbot.js"></script>
+
+</body>
+</html>
+
+
+

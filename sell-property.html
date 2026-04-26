@@ -1,0 +1,1136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Buy, sell, and invest in premium properties securely with Uttarakhand Infra Groups in Uttarakhand. Complete real estate solutions.">
+    <title>Buy & Sell Property | Real Estate Platform | Uttarakhand Infra Groups</title>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&family=Outfit:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+
+    <style>
+        /* Sell Property - Premium Decorated Styling */
+
+        .bg-blob {
+            position: absolute;
+            filter: blur(100px);
+            opacity: 0.4;
+            z-index: 0;
+            animation: float 10s ease-in-out infinite alternate;
+            border-radius: 50%;
+        }
+
+        .blob-gold {
+            background: rgba(212, 175, 55, 0.3);
+            width: 400px;
+            height: 400px;
+        }
+
+        .blob-navy {
+            background: rgba(10, 25, 47, 0.4);
+            width: 500px;
+            height: 500px;
+        }
+
+        /* Hero Section */
+        .sell-hero {
+            position: relative;
+            padding: 120px 0 60px 0;
+            background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            min-height: 40vh;
+        }
+
+        .sell-hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('assets/images/img_75.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .sell-hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 60%, rgba(10, 25, 47, 0.4) 100%);
+        }
+
+        .sell-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 650px;
+        }
+
+        .sell-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(212, 175, 55, 0.15);
+            border-left: 4px solid var(--c-gold);
+            color: var(--c-gold);
+            padding: 10px 25px;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .sell-title {
+            font-size: 3.5rem;
+            color: var(--c-white);
+            font-family: 'Playfair Display', serif;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .sell-title span {
+            color: transparent;
+            -webkit-text-stroke: 1px var(--c-gold);
+            display: block;
+            margin-top: 5px;
+        }
+
+        .sell-desc {
+            font-size: 1.15rem;
+            color: #cbd5e1;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+        }
+
+        /* Glass Stats Banner */
+        .glass-stats-wrapper {
+            position: relative;
+            margin-top: -80px;
+            margin-bottom: 40px;
+            width: 90%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 10;
+        }
+
+        .glass-stats-container {
+            background: rgba(10, 25, 47, 0.85);
+            /* Slightly darker for contrast outside hero */
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .stat-block {
+            text-align: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-block:last-child {
+            border-right: none;
+        }
+
+        .stat-block h3 {
+            font-size: 3rem;
+            color: var(--c-gold);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .stat-block p {
+            color: #e2e8f0;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+        }
+
+        /* Value Propositions */
+        .benefits-section {
+            padding: 80px 0 100px 0;
+            background: #ffffff;
+            position: relative;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .benefit-card {
+            background: #f8fafc;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(10, 25, 47, 0.03);
+            transition: all 0.4s ease;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #f1f5f9;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--c-navy), var(--c-gold));
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            background: #ffffff;
+            box-shadow: 0 30px 60px rgba(10, 25, 47, 0.08);
+        }
+
+        .benefit-card:hover::before {
+            opacity: 1;
+        }
+
+        .benefit-icon-wrapper {
+            width: 70px;
+            height: 70px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            color: var(--c-gold);
+            font-size: 2rem;
+            transition: all 0.4s ease;
+        }
+
+        .benefit-card:hover .benefit-icon-wrapper {
+            background: var(--c-gold);
+            color: var(--c-navy);
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .benefit-card h3 {
+            font-size: 1.6rem;
+            color: var(--c-navy);
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .benefit-card p {
+            color: #64748b;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* Asset Grid Categories */
+        .asset-categories {
+            padding: 100px 0;
+            background: #f1f5f9;
+            position: relative;
+        }
+
+        .asset-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .asset-box {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            height: 380px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .asset-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        .asset-box:hover img {
+            transform: scale(1.1);
+        }
+
+        .asset-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(10, 25, 47, 0.95) 0%, rgba(10, 25, 47, 0.4) 50%, transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 30px;
+        }
+
+        .asset-overlay h3 {
+            color: var(--c-gold);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .asset-overlay p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .asset-arrow {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .asset-box:hover .asset-arrow {
+            background: var(--c-gold);
+            color: var(--c-navy);
+            transform: translateX(10px);
+        }
+
+        /* Selling Process Cards */
+        .process-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .proc-card {
+            background: #ffffff;
+            border: 1px solid rgba(10, 25, 47, 0.05);
+            border-bottom: 4px solid var(--c-gold);
+            padding: 40px 30px;
+            border-radius: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+            text-align: left;
+        }
+
+        .proc-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .proc-num {
+            position: absolute;
+            top: -15px;
+            right: -5px;
+            font-size: 8rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            color: rgba(212, 175, 55, 0.08);
+            line-height: 1;
+            z-index: 0;
+            transition: all 0.5s ease;
+            user-select: none;
+        }
+
+        .proc-card:hover .proc-num {
+            color: rgba(212, 175, 55, 0.15);
+            transform: scale(1.05) translateX(-5px);
+        }
+
+        .proc-card h4 {
+            font-size: 1.35rem;
+            color: var(--c-navy);
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+
+        .proc-card-icon {
+            color: var(--c-gold);
+            font-size: 2rem;
+            margin-bottom: 25px;
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+
+        .proc-card p {
+            color: #64748b;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* FAQ Section */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .faq-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+            border-left: 3px solid var(--c-gold);
+        }
+
+        .faq-box h4 {
+            color: var(--c-navy);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .faq-box h4 i {
+            color: var(--c-gold);
+            margin-top: 4px;
+        }
+
+        .faq-box p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        /* Split Form Section */
+        .val-form-section {
+            padding: 120px 0;
+            background: var(--c-navy);
+            position: relative;
+        }
+
+        .split-form-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 0;
+            background: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.3);
+            margin-top: 60px;
+        }
+
+        @media (max-width: 992px) {
+            .split-form-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .form-image-panel {
+            background: linear-gradient(135deg, rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url('assets/images/img_74.jpg') center/cover;
+            padding: 60px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-image-panel h3 {
+            font-size: 2.8rem;
+            font-family: 'Playfair Display', serif;
+            color: var(--c-gold);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .form-image-panel p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .contact-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            border-radius: 50px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            margin-bottom: 15px;
+            max-width: fit-content;
+        }
+
+        .contact-pill i {
+            color: var(--c-gold);
+            font-size: 1.2rem;
+        }
+
+        .form-panel {
+            padding: 60px;
+            background: #f8fafc;
+        }
+
+        .val-form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .val-form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .val-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .val-group.full {
+            grid-column: 1 / -1;
+        }
+
+        .val-group label {
+            color: var(--c-navy);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .val-group input,
+        .val-group select,
+        .val-group textarea {
+            padding: 16px 20px;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            color: #334155;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .val-group input:focus,
+        .val-group select:focus,
+        .val-group textarea:focus {
+            outline: none;
+            border-color: var(--c-gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        .btn-submit-val {
+            background: var(--c-navy);
+            color: var(--c-white);
+            border: none;
+            padding: 20px 30px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .btn-submit-val:hover {
+            background: var(--c-gold);
+            color: var(--c-navy);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span class="branding-line"><i class="fa-solid fa-house-chimney"></i> Premium Property
+                    Liquidations</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <span class="support-text"><i class="fa-solid fa-clock"></i> Expert Assessors Available</span>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Corporate Navbar -->
+    <nav class="navbar premium-navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-mountain-sun"></i></span>
+                <div class="logo-text">
+                    <span class="brand-name">Uttarakhand</span>
+                    <span class="brand-sub">Infra Groups</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">Company <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="vision.html">Our Vision & Mission</a></li>
+                        <li><a href="choose.html">Why Choose Us</a></li>
+                    </ul>
+                </li>
+                <li class="mega-menu-item">
+                    <a href="index.html#services" class="active">Services <i
+                            class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-city text-gold"></i> Construction & Builders</h3>
+                                <ul>
+                                    <li><a href="house-construction.html"><i class="fa-solid fa-angle-right"></i> House Construction</a></li>
+                                    <li><a href="villa.html"><i class="fa-solid fa-angle-right"></i> Villa Construction</a></li>
+                                    <li><a href="hotel-construction.html"><i class="fa-solid fa-angle-right"></i> Hotel / Resort</a></li>
+                                    <li><a href="shop-com.html"><i class="fa-solid fa-angle-right"></i> Shop & Commercial</a></li>
+                                    <li><a href="trunkey.html"><i class="fa-solid fa-angle-right"></i> Turnkey Projects</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-truck-fast text-gold"></i> Transport & Logistics</h3>
+                                <ul>
+                                    <li><a href="construction-material.html"><i class="fa-solid fa-angle-right"></i> Construction Material</a></li>
+                                    <li><a href="heavy-equipment.html"><i class="fa-solid fa-angle-right"></i> Heavy Equipment</a></li>
+                                    <li><a href="all-uk-goods.html"><i class="fa-solid fa-angle-right"></i> All Uttarakhand Goods</a></li>
+                                    <li><a href="bulk-supply.html"><i class="fa-solid fa-angle-right"></i> Bulk Supply</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-boxes-packing text-gold"></i> Movers & Packers</h3>
+                                <ul>
+                                    <li><a href="home-relocation.html"><i class="fa-solid fa-angle-right"></i> Home Relocation</a></li>
+                                    <li><a href="office-shifting.html"><i class="fa-solid fa-angle-right"></i> Office Shifting</a></li>
+                                    <li><a href="vehicle-transportation.html"><i class="fa-solid fa-angle-right"></i> Vehicle Transportation</a></li>
+                                    <li><a href="warehouse.html"><i class="fa-solid fa-angle-right"></i> Warehouse / Storage</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-house-chimney text-gold"></i> Real Estate</h3>
+                                <ul>
+                                    <li><a href="buy-ready.html"><i class="fa-solid fa-angle-right"></i> Buy Ready House</a></li>
+                                    <li><a href="sell-property.html" class="active"><i class="fa-solid fa-angle-right"></i> Sell Property</a></li>
+                                    <li><a href="plot-construction.html"><i class="fa-solid fa-angle-right"></i> Plot Construction</a></li>
+                                    <li><a href="consulation.html"><i class="fa-solid fa-angle-right"></i> Consulting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li class="dropdown">
+                    <a href="index.html#areas">Service Areas <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ramnagar.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ramnagar</a></li>
+                        <li><a href="kashipur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Kashipur</a></li>
+                        <li><a href="rudrapur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Rudrapur</a></li>
+                        <li><a href="haldwani.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Haldwani</a></li>
+                        <li><a href="almora.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Almora</a></li>
+                        <li><a href="consulation.html"><i class="fa-solid fa-location-dot"
+                                    style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Nainital</a></li>
+                        <li><a href="ranikhet.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ranikhet</a></li>
+                        <li><a href="consulation.html"><i class="fa-solid fa-location-dot"
+                                    style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Pirumdara</a>
+                        </li>
+                        <li><a href="consulation.html"><i class="fa-solid fa-location-dot"
+                                    style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Dehradun</a></li>
+                        <li><a href="consulation.html"><i class="fa-solid fa-location-dot"
+                                    style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Mussoorie</a>
+                        </li>
+                        <li style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 5px; padding-top: 5px;">
+                            <a href="index.html#quote" style="color: var(--c-gold) !important;"><i
+                                    class="fa-solid fa-map-location-dot" style="margin-right: 8px;"></i>Enter Custom
+                                Location</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta-wrapper" style="display: flex; flex-direction: row; gap: 15px; align-items: center; flex-wrap: nowrap; white-space: nowrap;">
+                <a href="tel:+919456722521" class="btn-call" style="margin-right: 8px; padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); display: inline-flex; align-items: center;"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/919456722521" target="_blank" class="btn-whatsapp" style="padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); color: #25D366; display: inline-flex; align-items: center;"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="buy-ready.html" class="btn-primary" style="background: transparent; color: var(--c-gold); border: 2px solid var(--c-gold); padding: 8px 16px; font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-house-circle-check" style="margin-right: 8px;"></i> Buy Property</a>
+                <a href="sell-property.html" class="btn-primary" style="background: var(--c-gold); color: var(--c-navy); padding: 8px 16px; border: 2px solid var(--c-gold); font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-hand-holding-dollar" style="margin-right: 8px;"></i> Sell Property</a>
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Buy & Sell Property Hero -->
+    <header class="sell-hero">
+        <div class="bg-blob blob-gold" style="top: 10%; right: 20%;"></div>
+        <div class="bg-blob blob-navy" style="bottom: 0%; left: 0%;"></div>
+
+        <div class="sell-hero-bg"></div>
+        <div class="container" style="position: relative;">
+            <div class="sell-hero-content" data-aos="fade-right">
+                <div class="sell-badge"><i class="fa-solid fa-house-chimney" style="margin-right:8px;"></i>
+                    Premium Real Estate Platform</div>
+                <h1 class="sell-title">Buy, Sell & Invest in <span>Prime Properties.</span></h1>
+                <p class="sell-desc">Your trusted gateway for real estate in Uttarakhand. Whether you want to acquire your dream home with transparent titles or liquidate an existing asset for max value, we provide end-to-end solutions.</p>
+
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <a href="#properties" class="btn-primary btn-large"
+                        style="background:transparent; color:var(--c-gold); border: 2px solid var(--c-gold); padding:18px 40px; font-size:1.1rem; border-radius: 8px;"><i
+                            class="fa-solid fa-house-circle-check" style="margin-right:10px;"></i> Buy Property</a>
+                    <a href="#valuation" class="btn-primary btn-large"
+                        style="background:var(--c-gold); color:var(--c-navy); padding:18px 40px; font-size:1.1rem; border-radius: 8px; box-shadow: 0 10px 30px rgba(212,175,55,0.3); border: 2px solid var(--c-gold);"><i
+                            class="fa-solid fa-hand-holding-dollar" style="margin-right:10px;"></i> Sell Property</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Glass Stats Overlapping -->
+    <div class="glass-stats-wrapper" data-aos="fade-up" data-aos-delay="200">
+        <div class="glass-stats-container">
+            <div class="stat-block">
+                <h3>500+</h3>
+                <p>Properties Available</p>
+            </div>
+            <div class="stat-block">
+                <h3>48 Hrs</h3>
+                <p>Average Selling Valuation Time</p>
+            </div>
+            <div class="stat-block">
+                <h3>100%</h3>
+                <p>Transparent Legalities</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Selling Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-header center" data-aos="fade-up">
+                <span class="subtitle text-gold">FOR SELLERS</span>
+                <h2 class="title text-navy">Why Sell Your Property <span class="text-gold">To Us?</span></h2>
+                <div class="divider"></div>
+                <p style="color:#64748b; max-width:700px; margin: 0 auto; line-height:1.7; font-size: 1.1rem;">Do not wait endlessly for retail buyers. Uttarakhand Infra Groups buys direct. Our vertically integrated construction teams allow us to offer you higher valuations because we add our own developmental equity.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="benefit-icon-wrapper"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                    <h3>Institutional Liquidity</h3>
+                    <p>Stop waiting months for buyers to arrange bank loans. We offer aggressive institutional buyouts and incredibly rapid cash settlements for verified assets.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon-wrapper"><i class="fa-solid fa-file-signature"></i></div>
+                    <h3>Hassle-Free Transfers</h3>
+                    <p>Forget the endless paperwork and queues at the registrar. Our highly specialized legal team fully shoulders the burden of mutation and compliance.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon-wrapper"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h3>Optimized Valuations</h3>
+                    <p>Backed by our massive contracting network, our market assessments are hyper-accurate. We give you a brutally honest, highly-optimized price point.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buying Benefits Section -->
+    <section class="benefits-section" style="background:#f8fafc; padding-top: 60px;">
+        <div class="container">
+            <div class="section-header center" data-aos="fade-up">
+                <span class="subtitle text-gold">FOR BUYERS</span>
+                <h2 class="title text-navy">Why Buy Your Next Property <span class="text-gold">From Us?</span></h2>
+                <div class="divider"></div>
+                <p style="color:#64748b; max-width:700px; margin: 0 auto; line-height:1.7; font-size: 1.1rem;">Skip the legal ambiguity and broker commissions. We curate the most premium, clear-title properties in Uttarakhand, offering you a secure gateway to your dream home or commercial space.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card" style="background:#fff;" data-aos="fade-up" data-aos-delay="0">
+                    <div class="benefit-icon-wrapper" style="background: rgba(10,25,47,0.1); color: var(--c-navy);"><i class="fa-solid fa-file-contract"></i></div>
+                    <h3>100% Clear Titles</h3>
+                    <p>Every property in our portfolio undergoes rigorous legal screening. We guarantee zero encumbrances, pristine mutation records, and absolute legal safety.</p>
+                </div>
+                <div class="benefit-card" style="background:#fff;" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon-wrapper" style="background: rgba(10,25,47,0.1); color: var(--c-navy);"><i class="fa-solid fa-house-circle-check"></i></div>
+                    <h3>Pre-Inspected Quality</h3>
+                    <p>Our civil engineers inspect all ready-to-move homes. You buy properties that are structurally sound, beautifully finished, and free from hidden flaws.</p>
+                </div>
+                <div class="benefit-card" style="background:#fff;" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon-wrapper" style="background: rgba(10,25,47,0.1); color: var(--c-navy);"><i class="fa-solid fa-tags"></i></div>
+                    <h3>Zero Brokerage</h3>
+                    <p>You purchase directly from our institutional portfolio. No middlemen, no hidden commissions, just transparent and highly competitive market pricing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties We Deal In Section -->
+    <section class="asset-categories" id="properties">
+        <div class="container">
+            <div class="section-header center" data-aos="zoom-in">
+                <span class="subtitle text-navy">OUR PORTFOLIO</span>
+                <h2 class="title text-navy">Properties We <span class="text-gold">Buy & Sell</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="asset-grid">
+                <!-- Asset 1 -->
+                <div class="asset-box" data-aos="fade-up" data-aos-delay="0">
+                    <img src="assets/matched/img_643004ea.jpg"
+                        alt="Virgin Land">
+                    <div class="asset-overlay">
+                        <h3>Vacant Land & Plots</h3>
+                        <p>Immediate buyouts for sellers and clear-title agriculture parcels, commercial highway plots, or residential land for selective buyers.</p>
+                        <div class="asset-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <!-- Asset 2 -->
+                <div class="asset-box" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/matched/img_5bfd4ad9.jpg"
+                        alt="Villas">
+                    <div class="asset-overlay">
+                        <h3>Villas & Old Houses</h3>
+                        <p>We actively purchase established properties for renovation, while offering fully-furnished, high-tier ready villas to premium homebuyers.</p>
+                        <div class="asset-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <!-- Asset 3 -->
+                <div class="asset-box" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/matched/img_338a085d.jpg"
+                        alt="Commercial Spaces">
+                    <div class="asset-overlay">
+                        <h3>Commercial Units</h3>
+                        <p>Looking to set up a storefront, or liquidate a warehouse? We manage commercial assets for our massive B2B operational network.</p>
+                        <div class="asset-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transaction Process -->
+    <section style="padding: 100px 0; background: #fff;">
+        <div class="container">
+            <div class="section-header center" data-aos="fade-up">
+                <span class="subtitle text-gold">TRANSPARENT & SECURE</span>
+                <h2 class="title text-navy">Our Real Estate <span class="text-gold">Process</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="process-cards">
+                <div class="proc-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="proc-num">01</div>
+                    <i class="fa-solid fa-clipboard-list proc-card-icon"></i>
+                    <h4>Submit Requirements</h4>
+                    <p>Provide your property's dimensions for selling, or state your budget and preferences for buying through our secure portal.</p>
+                </div>
+                <div class="proc-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="proc-num">02</div>
+                    <i class="fa-solid fa-magnifying-glass-location proc-card-icon"></i>
+                    <h4>Assessment / Viewing</h4>
+                    <p>If selling, our civil team conducts an on-site inspection. If buying, we arrange exclusive site visits to matched properties.</p>
+                </div>
+                <div class="proc-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="proc-num">03</div>
+                    <i class="fa-solid fa-handshake-angle proc-card-icon"></i>
+                    <h4>Transparent Negotiation</h4>
+                    <p>We present a highly transparent buyout offer for sellers, or negotiate fair market rates for buyers based on authentic regional indices.</p>
+                </div>
+                <div class="proc-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="proc-num">04</div>
+                    <i class="fa-solid fa-check-double proc-card-icon"></i>
+                    <h4>Seamless Registry</h4>
+                    <p>Our legal team handles all paperwork, mutation, and compliance, ensuring a secure title transfer and banking handover within days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buyer & Seller FAQ -->
+    <section style="padding: 80px 0 100px; background: #f8fafc;">
+        <div class="container">
+            <div class="section-header center" data-aos="fade-up">
+                <span class="subtitle text-navy">TRANSPARENCY</span>
+                <h2 class="title text-navy">Common Questions <span class="text-gold">From Buyers & Sellers</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-box" data-aos="fade-right">
+                    <h4><i class="fa-solid fa-circle-question"></i> How do you calculate a property's value?</h4>
+                    <p>We don't rely purely on "market rumors". Our civil engineers evaluate the structural integrity,
+                        and our legal team assesses region-specific circle rates and demand metrics to formulate a
+                        verifiable, fair offer.</p>
+                </div>
+                <div class="faq-box" data-aos="fade-left">
+                    <h4><i class="fa-solid fa-circle-question"></i> Do you purchase or sell disputed properties?</h4>
+                    <p>We are quite strict. We only deal in properties with 100% clean legal titles, cleared mutations,
+                        and verifiable chain-of-ownership documents to ensure entirely ethical transfers for buyers and sellers.</p>
+                </div>
+                <div class="faq-box" data-aos="fade-right">
+                    <h4><i class="fa-solid fa-circle-question"></i> Will I need a broker?</h4>
+                    <p>Not at all. Uttarakhand Infra Groups buys and sells directly. Sidestepping third parties ensures 0% hidden brokerage fees reducing your overall costs.</p>
+                </div>
+                <div class="faq-box" data-aos="fade-left">
+                    <h4><i class="fa-solid fa-circle-question"></i> How fast is the payout or registry?</h4>
+                    <p>Once legal vetting gives a green light, registry and the concurrent RTGS/NEFT bank transfers are
+                        executed simultaneously. Typical closures happen within 14-21 working days for both buying and selling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Split Form Section -->
+    <section id="valuation" class="val-form-section">
+        <div class="bg-blob blob-gold" style="bottom: -100px; left: -100px;"></div>
+        <div class="bg-blob blob-navy" style="top: -100px; right: -100px;"></div>
+
+        <div class="container" style="position: relative; z-index: 5;">
+            <div class="section-header center" data-aos="zoom-in">
+                <span class="subtitle text-gold">FREE CONSULTATION DESK</span>
+                <h2 class="title text-white">Buy or Sell <span class="text-gold">Inquiry</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="split-form-wrapper" data-aos="fade-up">
+                <!-- Image Panel -->
+                <div class="form-image-panel">
+                    <h3>Secure Real Estate<br>Transactions.</h3>
+                    <p>Whether you're looking for an honest appraisal to sell your property or searching for a verified clear-title asset to purchase, our specialists are ready to guide you.</p>
+
+                    <div class="contact-pill">
+                        <i class="fa-solid fa-phone"></i>
+                        <span style="font-weight:600; font-family:'Outfit', sans-serif;">+91 98765 43210</span>
+                    </div>
+                    <div class="contact-pill">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span
+                            style="font-weight:600; font-family:'Outfit', sans-serif;">realestate@devbhoomi.com</span>
+                    </div>
+                </div>
+
+                <!-- Form Panel -->
+                <div class="form-panel">
+                    <form class="val-form-grid"
+                        onsubmit="event.preventDefault(); alert('Property Inquiry Submitted Successfully! Our team will contact you within 24 hours.');">
+
+                        <div class="val-group full">
+                            <label>Inquiry Type</label>
+                            <select required>
+                                <option value="">Select Transaction Type...</option>
+                                <option>I want to BUY a Property</option>
+                                <option>I want to SELL my Property</option>
+                            </select>
+                        </div>
+
+                        <div class="val-group full">
+                            <label>Property Category</label>
+                            <select required>
+                                <option value="">Select Property Type...</option>
+                                <option>Vacant Plot / Agricultural Land</option>
+                                <option>Residential House / Villa / Apartment</option>
+                                <option>Commercial Structure / Office / Shop</option>
+                                <option>Warehouse Space</option>
+                                <option>Under-Construction Project</option>
+                            </select>
+                        </div>
+
+                        <div class="val-group">
+                            <label>Preferred / Property Location</label>
+                            <input type="text" placeholder="e.g. Haldwani, Haridwar..." required>
+                        </div>
+
+                        <div class="val-group">
+                            <label>Dimensions / Size Requirement</label>
+                            <input type="text" placeholder="e.g. 2500 sqft / 2 bigha" required>
+                        </div>
+
+                        <div class="val-group full">
+                            <label>Budget / Expected Price Range (₹)</label>
+                            <input type="text" placeholder="Your estimated budget or asking price...">
+                        </div>
+
+                        <div class="val-group">
+                            <label>Full Legal Name</label>
+                            <input type="text" placeholder="First & Last Name" required>
+                        </div>
+
+                        <div class="val-group">
+                            <label>Contact Number</label>
+                            <input type="tel" placeholder="+91 00000 00000" required>
+                        </div>
+
+                        <div class="val-group full">
+                            <label>Specific remarks / Details (Optional)</label>
+                            <textarea rows="3"
+                                placeholder="Condition of the building, connectivity requirements, urgent liquidation needs, etc..."></textarea>
+                        </div>
+
+                        <div class="val-group full">
+                            <button type="submit" class="btn-submit-val">Submit Inquiry</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="corporate-footer">
+        <div class="container pt-80 pb-40">
+            <div class="footer-grid">
+                <!-- Branding -->
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo mb-20">
+                        <span class="logo-icon"><i class="fa-solid fa-mountain-sun text-gold"></i></span>
+                        <div class="logo-text">
+                            <span class="brand-name text-white">Uttarakhand</span>
+                            <span class="brand-sub text-gray">Infra Groups</span>
+                        </div>
+                    </a>
+                    <p class="text-gray mb-30">Pioneering excellence in structural development, heavy logistics, and
+                        premium relocation services across the Himalayan region.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Our Firm</a></li>
+                        <li><a href="vision.html">Vision & Mission</a></li>
+                        <li><a href="choose.html">Why Choose Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="house-construction.html">House Construction</a></li>
+                        <li><a href="all-uk-goods.html">Heavy Transit & Logistics</a></li>
+                        <li><a href="vehicle-transportation.html">Vehicle Relocation</a></li>
+                        <li><a href="buy-ready.html">Real Estate Appraisals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Market Insights</h4>
+                    <p class="text-gray mb-20">Subscribe to our monthly newsletter for real estate reports in
+                        Uttarakhand.</p>
+                    <div class="newsletter-pro">
+                        <input type="email" placeholder="Business Email">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom mt-60 pt-20">
+                <p class="text-gray">&copy; 2026 Uttarakhand Infra Groups. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fa-solid fa-robot"></i> Uttarakhand Infra Groups AI
+            </div>
+            <button class="chatbot-minimize" id="chatbot-minimize"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">Hello! Looking to value or sell your property? I can direct you to our real
+                estate team!</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-text" placeholder="Type your question...">
+            <button id="chatbot-send"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <div class="chatbot-toggle" id="chatbot-toggle">
+        <i class="fa-solid fa-message"></i>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>

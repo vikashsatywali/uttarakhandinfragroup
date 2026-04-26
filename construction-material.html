@@ -1,0 +1,1148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bulk construction material supply and transportation across Uttarakhand. Premium cement, steel, bricks, sand, and aggregates delivered securely to your site.">
+    <title>Construction Material Supply & Logistics in Uttarakhand | Uttarakhand Infra Groups</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&family=Outfit:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+
+    <style>
+        /* Modern Industrial Decorations */
+        :root {
+            --brand-orange: #f97316;
+            --brand-dark: #0f172a;
+        }
+
+        .page-header {
+            position: relative;
+            padding: 160px 0 80px 0;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 100%), url('assets/images/img_63.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 12px;
+            background: repeating-linear-gradient(45deg, var(--brand-orange), var(--brand-orange) 10px, #111 10px, #111 20px);
+            z-index: 3;
+        }
+
+        .header-floating-shapes {
+            display: none;
+        }
+
+        /* Kept in HTML but hidden for this theme */
+
+        .header-content-wrapper {
+            position: relative;
+            z-index: 2;
+            max-width: 950px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .header-badge {
+            display: inline-block;
+            background: rgba(249, 115, 22, 0.15);
+            border: 2px solid var(--brand-orange);
+            color: var(--brand-orange);
+            padding: 12px 35px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            box-shadow: 4px 4px 0px rgba(249, 115, 22, 0.3);
+            transform: skewX(-10deg);
+            animation: none;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-badge i,
+        .header-badge span {
+            transform: skewX(10deg);
+            display: inline-block;
+        }
+
+        .page-title {
+            font-size: 4rem;
+            color: #ffffff;
+            margin-bottom: 25px;
+            line-height: 1.1;
+            font-family: 'Inter', sans-serif;
+            font-weight: 900;
+            text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+
+        .page-desc {
+            font-size: 1.35rem;
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin: 0 auto 40px auto;
+            max-width: 800px;
+            text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.8);
+            font-weight: 500;
+        }
+
+        .btn-glow {
+            background: var(--brand-orange) !important;
+            color: #fff !important;
+            border: none;
+            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.4) !important;
+            border-radius: 4px !important;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 1px;
+            padding: 15px 40px;
+        }
+
+        .btn-glow:hover {
+            background: #c2410c !important;
+            transform: translateY(-3px);
+        }
+
+        .intro-container {
+            padding: 120px 0;
+            background: #f8fafc;
+            background-image: linear-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            text-align: center;
+        }
+
+        .highlight-box {
+            background: #ffffff;
+            border-left: 8px solid var(--brand-orange);
+            padding: 30px 40px;
+            margin: 40px auto;
+            max-width: 900px;
+            font-weight: 700;
+            color: var(--brand-dark);
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .solution-card {
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            padding: 45px 35px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-align: left;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .solution-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--brand-orange);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .solution-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: rgba(249, 115, 22, 0.3);
+        }
+
+        .solution-card i {
+            font-size: 3rem;
+            color: var(--brand-orange);
+            margin-bottom: 25px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .solution-card:hover i {
+            transform: scale(1.1);
+        }
+
+        .solution-card h3 {
+            font-size: 1.6rem;
+            color: var(--brand-dark);
+            margin-bottom: 15px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .process-section {
+            padding: 120px 0;
+            background: #0f172a;
+            color: #ffffff;
+            border-top: 5px solid var(--brand-orange);
+        }
+
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .process-box {
+            background: #1e293b;
+            border-bottom: 4px solid var(--brand-orange);
+            padding: 40px 30px;
+            border-radius: 6px;
+            position: relative;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .process-box::before {
+            content: attr(data-step);
+            font-size: 4rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.05);
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            line-height: 1;
+            z-index: -1;
+        }
+
+        .process-box:hover {
+            background: #27354f;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .process-box h4 {
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .process-box h4 i {
+            color: var(--brand-orange);
+            font-size: 1.8rem;
+            background: transparent;
+            padding: 0;
+        }
+
+        .process-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .process-box ul li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 12px;
+            color: #94a3b8;
+            font-size: 1.05rem;
+            line-height: 1.5;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .process-box:hover ul li {
+            color: #f1f5f9;
+        }
+
+        .process-box ul li::before {
+            content: '\f0da';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--brand-orange);
+            font-size: 1.1rem;
+        }
+
+        .own-plot-section {
+            padding: 120px 0;
+            background: #ffffff;
+        }
+
+        .split-container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .split-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .split-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 15px 15px 0px var(--brand-orange);
+            transition: transform 0.5s ease;
+        }
+
+        .split-image:hover img {
+            transform: scale(1.02);
+        }
+
+        .glass-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--brand-dark);
+            color: #fff;
+            padding: 30px;
+            border: 4px solid var(--brand-orange);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .glass-badge h3 {
+            font-size: 2.5rem;
+            color: var(--brand-orange);
+            font-family: 'Inter', sans-serif;
+            font-weight: 900;
+            margin-bottom: 5px;
+            line-height: 1;
+        }
+
+        .glass-badge p {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin: 0;
+            color: #cbd5e1;
+        }
+
+        .split-content {
+            flex: 1;
+        }
+
+        .check-list {
+            margin-top: 35px;
+        }
+
+        .check-list li {
+            font-size: 1.15rem;
+            color: var(--brand-dark);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+
+        .check-list li i {
+            color: var(--brand-orange);
+            font-size: 1.4rem;
+            margin-top: 2px;
+        }
+
+        .why-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .why-tag {
+            background: #f1f5f9;
+            border: 2px solid transparent;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--brand-dark);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-transform: uppercase;
+        }
+
+        .why-tag i {
+            color: var(--brand-orange);
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .why-tag:hover {
+            border-color: var(--brand-orange);
+            background: #fff;
+            transform: translateY(-3px);
+            box-shadow: 4px 4px 0px rgba(249, 115, 22, 0.2);
+        }
+
+        .why-tag:hover i {
+            transform: scale(1.2);
+        }
+
+        .locations-box {
+            background: #0f172a;
+            padding: 70px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 80px;
+            position: relative;
+            border-bottom: 6px solid var(--brand-orange);
+            overflow: hidden;
+        }
+
+        .locations-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 2px, transparent 2px);
+            background-size: 30px 30px;
+            z-index: 0;
+        }
+
+        .location-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .location-tags span {
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .location-tags span:hover {
+            background: var(--brand-orange);
+            border-color: var(--brand-orange);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .approach-section {
+            padding: 100px 0;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .approach-box {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            border-left: 8px solid var(--brand-orange);
+        }
+
+        .approach-box::before {
+            display: none;
+        }
+
+        .cta-footer-banner {
+            background: var(--brand-orange) url('assets/images/img_12.jpg') center/cover fixed;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-footer-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            z-index: 0;
+        }
+
+        .cta-footer-banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: repeating-linear-gradient(45deg, var(--brand-orange), var(--brand-orange) 10px, #111 10px, #111 20px);
+            z-index: 3;
+        }
+
+        .cta-footer-banner .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-footer-banner h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-footer-banner p {
+            font-size: 1.35rem;
+            color: #cbd5e1;
+            font-weight: 500;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn-gold {
+            background: var(--brand-orange);
+            color: #fff;
+            padding: 18px 45px;
+            border-radius: 4px;
+            font-size: 1.25rem;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-btn-gold:hover {
+            transform: translateY(-5px);
+            background: #c2410c;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+
+        @media(max-width: 992px) {
+            .split-container {
+                flex-direction: column;
+            }
+
+            .page-title {
+                font-size: 4rem;
+            }
+        }
+
+        @media(max-width: 768px) {
+            .page-title {
+                font-size: 3rem;
+            }
+
+            .locations-box {
+                padding: 40px 20px;
+            }
+
+            .glass-badge {
+                right: 20px;
+                bottom: -20px;
+                padding: 20px;
+            }
+
+            .glass-badge h3 {
+                font-size: 2rem;
+            }
+
+            .page-header {
+                padding: 120px 0 60px 0;
+            }
+        }
+
+        /* Overrides to match new theme inline text colors */
+        .text-gold {
+            color: var(--brand-orange) !important;
+        }
+
+        h5.subtitle.text-gold,
+        .text-gold.mb-10 {
+            color: var(--brand-orange) !important;
+            letter-spacing: 3px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+        }
+
+        .intro-text p {
+            color: var(--brand-dark);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span class="branding-line"><i class="fa-solid fa-truck-fast"></i> Complete Infrastructure & Logistics
+                    Solutions - Uttarakhand to All India</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="social-icons">
+                    <span class="support-text"><i class="fa-solid fa-clock"></i> 24/7 Support</span>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Corporate Navbar -->
+    <nav class="navbar premium-navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-mountain-sun"></i></span>
+                <div class="logo-text">
+                    <span class="brand-name">Uttarakhand</span>
+                    <span class="brand-sub">Infra Groups</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">Company <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="vision.html">Our Vision & Mission</a></li>
+                        <li><a href="choose.html">Why Choose Us</a></li>
+                    </ul>
+                </li>
+                <li class="mega-menu-item">
+                    <a href="index.html#services" class="active">Services <i
+                            class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-content">
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-city text-gold"></i> Construction & Builders</h3>
+                                <ul>
+                                    <li><a href="house-construction.html"><i class="fa-solid fa-angle-right"></i> House Construction</a></li>
+                                    <li><a href="villa.html"><i class="fa-solid fa-angle-right"></i> Villa Construction</a></li>
+                                    <li><a href="hotel-construction.html"><i class="fa-solid fa-angle-right"></i> Hotel / Resort</a></li>
+                                    <li><a href="shop-com.html"><i class="fa-solid fa-angle-right"></i> Shop & Commercial</a></li>
+                                    <li><a href="trunkey.html"><i class="fa-solid fa-angle-right"></i> Turnkey Projects</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-truck-fast text-gold"></i> Transport & Logistics</h3>
+                                <ul>
+                                    <li><a href="construction-material.html" class="active"><i class="fa-solid fa-angle-right"></i> Construction Material</a></li>
+                                    <li><a href="heavy-equipment.html"><i class="fa-solid fa-angle-right"></i> Heavy Equipment</a></li>
+                                    <li><a href="all-uk-goods.html"><i class="fa-solid fa-angle-right"></i> All Uttarakhand Goods</a></li>
+                                    <li><a href="bulk-supply.html"><i class="fa-solid fa-angle-right"></i> Bulk Supply</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-boxes-packing text-gold"></i> Movers & Packers</h3>
+                                <ul>
+                                    <li><a href="home-relocation.html"><i class="fa-solid fa-angle-right"></i> Home Relocation</a></li>
+                                    <li><a href="office-shifting.html"><i class="fa-solid fa-angle-right"></i> Office Shifting</a></li>
+                                    <li><a href="vehicle-transportation.html"><i class="fa-solid fa-angle-right"></i> Vehicle Transportation</a></li>
+                                    <li><a href="warehouse.html"><i class="fa-solid fa-angle-right"></i> Warehouse / Storage</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3><i class="fa-solid fa-house-chimney text-gold"></i> Real Estate</h3>
+                                <ul>
+                                    <li><a href="buy-ready.html"><i class="fa-solid fa-angle-right"></i> Buy Ready House</a></li>
+                                    <li><a href="sell-property.html"><i class="fa-solid fa-angle-right"></i> Sell Property</a></li>
+                                    <li><a href="plot-construction.html"><i class="fa-solid fa-angle-right"></i> Plot Construction</a></li>
+                                    <li><a href="consulation.html"><i class="fa-solid fa-angle-right"></i> Consulting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li class="dropdown">
+                    <a href="index.html#areas">Service Areas <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rudrapur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Rudrapur</a></li>
+                        <li><a href="haldwani.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Haldwani</a></li>
+                        <li><a href="ramnagar.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ramnagar</a></li>
+                        <li><a href="almora.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Almora</a></li>
+                        <li><a href="ranikhet.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Ranikhet</a></li>
+                        <li><a href="kashipur.html"><i class="fa-solid fa-location-dot" style="color: var(--c-gold); opacity: 0.7; margin-right: 8px;"></i>Kashipur</a></li>
+                        <li style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 5px; padding-top: 5px;">
+                            <a href="index.html#quote" style="color: var(--c-gold) !important;"><i
+                                    class="fa-solid fa-map-location-dot" style="margin-right: 8px;"></i>Enter Custom
+                                Location</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta-wrapper" style="display: flex; flex-direction: row; gap: 15px; align-items: center; flex-wrap: nowrap; white-space: nowrap;">
+                <a href="tel:+919456722521" class="btn-call" style="margin-right: 8px; padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); display: inline-flex; align-items: center;"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/919456722521" target="_blank" class="btn-whatsapp" style="padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.1); color: #25D366; display: inline-flex; align-items: center;"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="buy-ready.html" class="btn-primary" style="background: transparent; color: var(--c-gold); border: 2px solid var(--c-gold); padding: 8px 16px; font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-house-circle-check" style="margin-right: 8px;"></i> Buy Property</a>
+                <a href="sell-property.html" class="btn-primary" style="background: var(--c-gold); color: var(--c-navy); padding: 8px 16px; border: 2px solid var(--c-gold); font-weight: 600; display: inline-flex; align-items: center; white-space: nowrap;"><i class="fa-solid fa-hand-holding-dollar" style="margin-right: 8px;"></i> Sell Property</a>
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" id="home">
+        <!-- Floating Animated Blobs -->
+        <div class="header-floating-shapes">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+        </div>
+
+        <div class="container header-content-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+            <span class="header-badge"><i class="fa-solid fa-truck-ramp-box" style="margin-right:8px;"></i> Heavy
+                Material Logistics</span>
+            <h1 class="page-title">Construction Material Supply</h1>
+            <p class="page-desc">
+                Reliable, large-scale supply and transportation of A-Grade construction materials. We ensure your
+                project never stops by delivering what you need, exactly when you need it across Uttarakhand.
+            </p>
+            <a href="index.html#contact" class="btn-primary btn-large btn-glow"><i class="fa-solid fa-calculator"
+                    style="margin-right:8px;"></i> Request Bulk Quote</a>
+        </div>
+    </header>
+
+    <!-- Intro / What We Do -->
+    <section class="intro-container">
+        <div class="container" data-aos="fade-up">
+            <h5 class="subtitle text-gold mb-10" style="letter-spacing:3px;">BULK PROCUREMENT & LOGISTICS</h5>
+            <h2 class="title" style="color: var(--c-navy); margin-bottom: 25px;">Fueling Your <span
+                    class="text-gold">Construction</span></h2>
+
+            <div class="intro-text">
+                <p>Delays in material supply cost serious time and money. Empty construction sites drain resources
+                    rapidly. We solve this by operating a highly optimized logistics network supplying heavy building
+                    materials directly to your site, even in the remote hilly terrain of Uttarakhand.</p>
+                <p>As authorized dealers and direct procurers, we offer wholesale pricing on premium materials and
+                    ensure 100% genuine quality verification before any truck is dispatched to your location.</p>
+            </div>
+
+            <div class="highlight-box" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-truck-moving fa-beat" style="font-size: 1.8rem; color: var(--c-gold);"></i>
+                <div style="text-align: left;">
+                    Whether you need 50 bags of cement or a continuous multi-week bulk supply of TMT steel and river
+                    sand for a mega-project, our fleet is ready to deploy.
+                </div>
+            </div>
+
+            <!-- Specializations Grid -->
+            <div class="solutions-grid">
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                    <h3>Premium Cement</h3>
+                    <p class="text-gray">Direct wholesale supply of PPC, OPC (43 and 53 Grade) cement from trusted top
+                        brands like Ultratech, Ambuja, and ACC sent directly from factories.</p>
+                </div>
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <h3>TMT Steel Rebars</h3>
+                    <p class="text-gray">High-strength, earthquake-resistant Fe-500D & Fe-550 TMT bars from highly
+                        reputed manufacturers like Tata Tiscon, Jindal Panther, and Kamdhenu.</p>
+                </div>
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-mound"></i>
+                    <h3>Sand & Stone Dust</h3>
+                    <p class="text-gray">Continuous reliable provision of legally sourced, finely filtered River Sand
+                        and premium quality Stone Dust for strong plastering and brickwork.</p>
+                </div>
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-cubes"></i>
+                    <h3>Bricks & Blocks</h3>
+                    <p class="text-gray">Bulk supply of Number 1 Class red clay structure bricks, lightweight AAC
+                        blocks, and highly durable environmental fly ash bricks.</p>
+                </div>
+                <div class="solution-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fa-solid fa-hill-rockslide"></i>
+                    <h3>Coarse Aggregates</h3>
+                    <p class="text-gray">Hard crushed stone (Rodi/Gravel) in multiple mm sizes directly delivered from
+                        rock crushers for extremely tough concrete slab mixtures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End-to-End Timeline -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header center light" data-aos="fade-up">
+                <span class="subtitle text-gold">Logistics Protocol</span>
+                <h2 class="title text-white">How We Supply <span class="text-gold">Your Site</span></h2>
+                <p
+                    style="color: #CBD5E1; margin-top: 20px; font-size: 1.2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Our industrial dispatch logic ensures that your construction team never has to stop working because
+                    of missing inventory.</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="timeline-grid">
+                <!-- Step 1 -->
+                <div class="process-box" data-step="01" data-aos="fade-up" data-aos-delay="0">
+                    <h4><i class="fa-solid fa-calculator"></i> Order Estimation</h4>
+                    <ul>
+                        <li>Consultation on exact material grades required for your design</li>
+                        <li>Accurate structural 'Material Takeoff' to prevent massive wastage</li>
+                        <li>Providing detailed transparent invoices with factory-direct rates</li>
+                    </ul>
+                </div>
+                <!-- Step 2 -->
+                <div class="process-box" data-step="02" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fa-solid fa-certificate"></i> Quality Selection</h4>
+                    <ul>
+                        <li>Procuring exclusively from authorized factories and legal quarries</li>
+                        <li>Strict batch checking-never supplying expired or wet cement</li>
+                        <li>Ensuring steel bears exact dimensional weight/thickness specs</li>
+                    </ul>
+                </div>
+                <!-- Step 3 -->
+                <div class="process-box" data-step="03" data-aos="fade-up" data-aos-delay="200">
+                    <h4><i class="fa-solid fa-truck-fast"></i> Heavy Dispatch</h4>
+                    <ul>
+                        <li>Assigning appropriate capacity heavy-lift trucks or tipper dumpers</li>
+                        <li>Securing loads physically against harsh weather or rain during transit</li>
+                        <li>Strict navigation through challenging Uttarakhand hill passes and routes</li>
+                    </ul>
+                </div>
+                <!-- Step 4 -->
+                <div class="process-box" data-step="04" data-aos="fade-up" data-aos-delay="300">
+                    <h4><i class="fa-solid fa-location-crosshairs"></i> Shipment Tracking</h4>
+                    <ul>
+                        <li>Constant GPS communication with our massive fleet operators</li>
+                        <li>Providing site-managers with exact accurate countdown ETAs</li>
+                        <li>Ensuring zero logistics delays on time-sensitive wet concrete (RMC)</li>
+                    </ul>
+                </div>
+                <!-- Step 5 -->
+                <div class="process-box" data-step="05" data-aos="fade-up" data-aos-delay="400">
+                    <h4><i class="fa-solid fa-boxes-packing"></i> Safe Unloading</h4>
+                    <ul>
+                        <li>On-site logistics logic to arrange materials properly without damage</li>
+                        <li>Safe mechanical tipping of bulk aggregates and dense sand</li>
+                        <li>Professional handover matching the exact digital delivery invoice</li>
+                    </ul>
+                </div>
+                <!-- Step 6 -->
+                <div class="process-box" data-step="06" data-aos="fade-up" data-aos-delay="500">
+                    <h4><i class="fa-solid fa-rotate"></i> Continuous Refill</h4>
+                    <ul>
+                        <li>Dedicated account manager assigned to coordinate your ongoing build</li>
+                        <li>Automated re-booking schedules for multi-month giant projects</li>
+                        <li>Zero-stress scale-up when your project expands its requirements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Own Plot Section / Why Choose us -->
+    <section class="own-plot-section">
+        <div class="container">
+            <div class="split-container">
+                <div class="split-content" data-aos="fade-right">
+                    <h5 class="subtitle text-gold">Industrial Strength</h5>
+                    <h2 class="title" style="color: var(--c-navy); font-size: 3.2rem;">Unmatched <span
+                            class="text-gold">Supply Capability</span></h2>
+                    <p style="color: #475569; font-size: 1.25rem; margin-top: 25px; line-height: 1.7;">
+                        Unlike standard middle-men brokers, we own the logistics. Our private massive transport fleet
+                        and direct relationships with top-tier India-level manufacturers give us total pricing dominance
+                        and supply chain speed.
+                    </p>
+
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Uninterrupted Supply:</strong> Our
+                                vehicles operate night and day ensuring you receive materials exactly on
+                                schedule.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Factory-Direct Pricing:</strong> We
+                                pass our massive wholesale procurement savings strictly down to your budget.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>Hill-Terrain Experts:</strong> Expert
+                                drivers specifically trained to haul dense heavy loads up steep mountain curves
+                                safely.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span><strong>100% Authentic:</strong> Zero
+                                adulteration. You get sealed genuine branded products preventing structural
+                                disasters.</span></li>
+                    </ul>
+
+                    <h3
+                        style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--c-navy); margin-top: 50px; margin-bottom: 25px;">
+                        Why Uttarakhand Infra Groups Logistics</h3>
+                    <div class="why-tags">
+                        <span class="why-tag"><i class="fa-solid fa-truck"></i> Heavy Fleet Setup</span>
+                        <span class="why-tag"><i class="fa-solid fa-clock-rotate-left"></i> Timely Delivery</span>
+                        <span class="why-tag"><i class="fa-solid fa-percent"></i> Wholesale Rates</span>
+                        <span class="why-tag"><i class="fa-solid fa-shield-cat"></i> Authentic Materials</span>
+                    </div>
+                </div>
+                <div class="split-image" data-aos="fade-left">
+                    <img src="assets/matched/img_27f0687f.jpg"
+                        alt="Construction Logistics and Trucks">
+                    <!-- Premium Glass Badge -->
+                    <div class="glass-badge">
+                        <h3>100%</h3>
+                        <p>Logistics<br>Reliability</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Locations Area -->
+            <div class="locations-box" data-aos="zoom-in" data-aos-offset="100">
+                <h2 class="title" style="font-size: 2.5rem; color: #ffffff; position: relative; z-index: 1;">Supply
+                    Chain <span class="text-gold">Delivery Zones</span></h2>
+                <p style="color: #cbd5e1; font-size: 1.15rem; margin-top: 15px; position: relative; z-index: 1;">Pushing
+                    heavy construction materials to the furthest points across Uttarakhand daily.</p>
+                <div class="location-tags">
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--c-gold); margin-right:8px;"></i>
+                        Haldwani</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--c-gold); margin-right:8px;"></i>
+                        Rudrapur</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--c-gold); margin-right:8px;"></i>
+                        Kashipur</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--c-gold); margin-right:8px;"></i>
+                        Ramnagar</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--c-gold); margin-right:8px;"></i>
+                        Dehradun</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--c-gold); margin-right:8px;"></i>
+                        Almora</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--c-gold); margin-right:8px;"></i>
+                        Pithoragarh</span>
+                    <span><i class="fa-solid fa-building-flag" style="color:var(--c-gold); margin-right:8px;"></i>
+                        Nanital</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="approach-section">
+        <div class="container text-center" data-aos="fade-up">
+            <h5 class="subtitle text-gold">Our Philosophy</h5>
+            <h2 class="title" style="color: var(--c-navy); margin-bottom: 40px; font-size: 3rem;">The Backbone of <span
+                    class="text-gold">Building</span></h2>
+            <div class="approach-box">
+                <p style="font-size: 1.35rem; color: var(--c-navy); line-height: 1.9; font-weight: 500;">
+                    We believe that a construction project is only as fast and strong as its supply chain. By
+                    guaranteeing prompt delivery of high purity, heavily verified, and factory-direct materials, we
+                    allow engineers to build with 100% total confidence. <br><br>
+                    <strong style="color: var(--c-gold); font-size: 1.5rem; font-family: 'Playfair Display', serif;">We
+                        don't just supply cement and steel - we supply structural reliability.</strong>
+                </p>
+            </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="padding: 100px 0; background: #ffffff;">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up" style="margin-bottom: 60px;">
+                <h5 class="subtitle text-gold">GOT QUESTIONS?</h5>
+                <h2 class="title text-navy" style="font-size: 2.8rem;">Frequently Asked <span class="text-gold">Questions</span></h2>
+            </div>
+            
+            <div class="faq-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="0" style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 4px solid var(--c-gold); box-shadow: 0 10px 20px rgba(0,0,0,0.02);">
+                    <h4 style="color: var(--c-navy); font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-circle-question" style="color: var(--c-gold); margin-right: 10px;"></i> Do you deliver to remote hilly areas?</h4>
+                    <p style="color: #475569; line-height: 1.6; margin: 0;">Yes, our logistics network spans across Uttarakhand. We have specialized heavy-duty vehicles explicitly built for navigating narrow, steep Himalayan terrains safely.</p>
+                </div>
+                
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="100" style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 4px solid var(--c-gold); box-shadow: 0 10px 20px rgba(0,0,0,0.02);">
+                    <h4 style="color: var(--c-navy); font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-circle-question" style="color: var(--c-gold); margin-right: 10px;"></i> Is there a minimum order quantity?</h4>
+                    <p style="color: #475569; line-height: 1.6; margin: 0;">We cater to both large commercial projects and individual home builders. Minimum quantities vary by material type (e.g., minimum tons of steel/cement). Please contact us directly for specifics.</p>
+                </div>
+
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="200" style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 4px solid var(--c-gold); box-shadow: 0 10px 20px rgba(0,0,0,0.02);">
+                    <h4 style="color: var(--c-navy); font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-circle-question" style="color: var(--c-gold); margin-right: 10px;"></i> How do you ensure material quality?</h4>
+                    <p style="color: #475569; line-height: 1.6; margin: 0;">We source directly from certified, top-tier manufacturers. All cement, steel rebars, and aggregates go through rigorous quality checks before dispatch to ensure structural integrity.</p>
+                </div>
+
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="300" style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 4px solid var(--c-gold); box-shadow: 0 10px 20px rgba(0,0,0,0.02);">
+                    <h4 style="color: var(--c-navy); font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-circle-question" style="color: var(--c-gold); margin-right: 10px;"></i> Can we set up a staggered delivery schedule?</h4>
+                    <p style="color: #475569; line-height: 1.6; margin: 0;">Absolutely. We sync with your construction timeline to provide "just-in-time" delivery, ensuring materials arrive exactly when needed rather than cluttering your site prematurely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Powerful Closing Banner -->
+        <div class="container" data-aos="zoom-in">
+            <h2>"Premium Materials Delivered Right When Your Site Needs Them."</h2>
+            <p>Ensure your construction never stops. Lock in your heavy material logistics with our wholesale supply
+                network today.</p>
+            <a href="index.html#contact" class="cta-btn-gold">
+                <i class="fa-solid fa-file-signature"></i> Order Construction Materials
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="corporate-footer">
+        <div class="container pt-80 pb-40">
+            <div class="footer-grid">
+                <!-- Branding -->
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo mb-20">
+                        <span class="logo-icon"><i class="fa-solid fa-mountain-sun text-gold"></i></span>
+                        <div class="logo-text">
+                            <span class="brand-name text-white">Uttarakhand</span>
+                    <span class="brand-sub text-gray">Infra Groups</span>
+                        </div>
+                    </a>
+                    <p class="text-gray mb-30">Pioneering excellence in structural development, heavy logistics, and
+                        premium relocation services across the Himalayan region.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Our Firm</a></li>
+                        <li><a href="vision.html">Vision & Mission</a></li>
+                        <li><a href="choose.html">Why Choose Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="house-construction.html">House Construction</a></li>
+                        <li><a href="index.html#services">Heavy Transit & Logistics</a></li>
+                        <li><a href="index.html#services">Movers & Packers</a></li>
+                        <li><a href="index.html#services">Real Estate & Property</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Industry Insights</h4>
+                    <p class="text-gray mb-20">Subscribe to our monthly newsletter for infrastructure updates in
+                        Uttarakhand.</p>
+                    <div class="newsletter-pro">
+                        <input type="email" placeholder="Business Email">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom mt-60 pt-20">
+                <p class="text-gray">&copy; 2026 Uttarakhand Infra Groups. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i class="fa-solid fa-robot"></i> Uttarakhand Infra Groups AI
+            </div>
+            <button id="chatbot-close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                Hello! I'm the Uttarakhand Infra Groups AI Assistant. Ask me anything about our construction, transport, or relocation
+                services in any language!
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Type a message..." autocomplete="off">
+            <button id="chatbot-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chatbot-toggle-btn" id="chatbot-toggle-btn">
+        <i class="fa-solid fa-message"></i>
+    </button>
+    <script src="chatbot.js"></script>
+
+</body>
+
+</html>
+
+
