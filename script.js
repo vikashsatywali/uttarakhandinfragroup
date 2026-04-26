@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     // 1. Initialize AOS (Animate On Scroll)
     AOS.init({
         duration: 800,
@@ -76,7 +76,7 @@
             const parentLi = link.parentElement;
             
             // If it's a dropdown or mega menu item on mobile
-            if ((parentLi.classList.contains('dropdown') || parentLi.classList.contains('mega-menu-item')) && window.innerWidth <= 991) {
+            if ((parentLi.classList.contains('dropdown') || parentLi.classList.contains('mega-menu-item')) && window.innerWidth <= 768) {
                 e.preventDefault(); // Prevent jump
                 // Toggle active state for submenu
                 if (parentLi.classList.contains('active-mobile')) {
